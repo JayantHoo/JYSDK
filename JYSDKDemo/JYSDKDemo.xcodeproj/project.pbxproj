@@ -15,6 +15,14 @@
 		9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC3F7206B9B3A00BD6FB5 /* main.m */; };
 		9D8AC402206B9B3A00BD6FB5 /* JYSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC401206B9B3A00BD6FB5 /* JYSDKDemoTests.m */; };
 		9D8AC40D206B9B3A00BD6FB5 /* JYSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC40C206B9B3A00BD6FB5 /* JYSDKDemoUITests.m */; };
+		9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */; };
+		9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD1DDC206CD2AF00D35594 /* AlipaySDK.bundle */; };
+		9DDD1DDF206CD2AF00D35594 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DDD206CD2AF00D35594 /* AlipaySDK.framework */; };
+		9DDD1DE5206CD2CA00D35594 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DE1206CD2CA00D35594 /* libWeiboSDK.a */; };
+		9DDD1DE6206CD2CA00D35594 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD1DE3206CD2CA00D35594 /* WeiboSDK.bundle */; };
+		9DDD1DEC206CD2EA00D35594 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DE8206CD2EA00D35594 /* libWeChatSDK.a */; };
+		9DDD1DEF206CD39E00D35594 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */; };
+		9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,21 @@
 		9D8AC408206B9B3A00BD6FB5 /* JYSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8AC40C206B9B3A00BD6FB5 /* JYSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYSDKDemoUITests.m; sourceTree = "<group>"; };
 		9D8AC40E206B9B3A00BD6FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDD1DD7206C9A7200D35594 /* JYTPUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTPUserInfo.h; sourceTree = "<group>"; };
+		9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPUserInfo.m; sourceTree = "<group>"; };
+		9DDD1DDC206CD2AF00D35594 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		9DDD1DDD206CD2AF00D35594 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		9DDD1DE1206CD2CA00D35594 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		9DDD1DE2206CD2CA00D35594 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		9DDD1DE3206CD2CA00D35594 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		9DDD1DE4206CD2CA00D35594 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		9DDD1DE8206CD2EA00D35594 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		9DDD1DE9206CD2EA00D35594 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		9DDD1DEA206CD2EA00D35594 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		9DDD1DEB206CD2EA00D35594 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		9DDD1DF0206CEE9A00D35594 /* JYTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTPHelper.h; sourceTree = "<group>"; };
+		9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDD1DDF206CD2AF00D35594 /* AlipaySDK.framework in Frameworks */,
+				9DDD1DEF206CD39E00D35594 /* TencentOpenAPI.framework in Frameworks */,
+				9DDD1DE5206CD2CA00D35594 /* libWeiboSDK.a in Frameworks */,
+				9DDD1DEC206CD2EA00D35594 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,8 @@
 		9D8AC3DC206B9B3900BD6FB5 = {
 			isa = PBXGroup;
 			children = (
+				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
+				9DDD1DD6206C996B00D35594 /* JYTPHelper */,
 				9D8AC3E7206B9B3A00BD6FB5 /* JYSDKDemo */,
 				9D8AC400206B9B3A00BD6FB5 /* JYSDKDemoTests */,
 				9D8AC40B206B9B3A00BD6FB5 /* JYSDKDemoUITests */,
@@ -130,6 +159,67 @@
 				9D8AC40E206B9B3A00BD6FB5 /* Info.plist */,
 			);
 			path = JYSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		9DDD1DD6206C996B00D35594 /* JYTPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9DDD1DD7206C9A7200D35594 /* JYTPUserInfo.h */,
+				9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */,
+				9DDD1DF0206CEE9A00D35594 /* JYTPHelper.h */,
+				9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */,
+			);
+			path = JYTPHelper;
+			sourceTree = "<group>";
+		};
+		9DDD1DDA206CD27E00D35594 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				9DDD1DED206CD39E00D35594 /* QQ */,
+				9DDD1DE7206CD2EA00D35594 /* WeChat */,
+				9DDD1DE0206CD2CA00D35594 /* libWeiboSDK */,
+				9DDD1DDB206CD2AF00D35594 /* AliPay */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		9DDD1DDB206CD2AF00D35594 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				9DDD1DDC206CD2AF00D35594 /* AlipaySDK.bundle */,
+				9DDD1DDD206CD2AF00D35594 /* AlipaySDK.framework */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		9DDD1DE0206CD2CA00D35594 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9DDD1DE1206CD2CA00D35594 /* libWeiboSDK.a */,
+				9DDD1DE2206CD2CA00D35594 /* WBHttpRequest.h */,
+				9DDD1DE3206CD2CA00D35594 /* WeiboSDK.bundle */,
+				9DDD1DE4206CD2CA00D35594 /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		9DDD1DE7206CD2EA00D35594 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				9DDD1DE8206CD2EA00D35594 /* libWeChatSDK.a */,
+				9DDD1DE9206CD2EA00D35594 /* WechatAuthSDK.h */,
+				9DDD1DEA206CD2EA00D35594 /* WXApi.h */,
+				9DDD1DEB206CD2EA00D35594 /* WXApiObject.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		9DDD1DED206CD39E00D35594 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */,
+			);
+			path = QQ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +330,8 @@
 			files = (
 				9D8AC3F5206B9B3A00BD6FB5 /* LaunchScreen.storyboard in Resources */,
 				9D8AC3F2206B9B3A00BD6FB5 /* Assets.xcassets in Resources */,
+				9DDD1DE6206CD2CA00D35594 /* WeiboSDK.bundle in Resources */,
+				9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */,
 				9D8AC3F0206B9B3A00BD6FB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */,
+				9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */,
 				9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */,
 				9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */,
+				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +526,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 636CQ24LU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty/AliPay",
+					"$(PROJECT_DIR)/ThirdParty/QQ",
+				);
 				INFOPLIST_FILE = JYSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty/libWeiboSDK",
+					"$(PROJECT_DIR)/ThirdParty/WeChat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.isenu.JYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,11 +550,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 636CQ24LU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty/AliPay",
+					"$(PROJECT_DIR)/ThirdParty/QQ",
+				);
 				INFOPLIST_FILE = JYSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty/libWeiboSDK",
+					"$(PROJECT_DIR)/ThirdParty/WeChat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.isenu.JYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
