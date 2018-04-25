@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64665A20901CA3002128F1 /* JYTPShareTool.m */; };
+		9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64665E20905094002128F1 /* NSDictionary+JYSafe.m */; };
+		9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D646661209050E9002128F1 /* NSObject+JYRuntime.m */; };
+		9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64666420905143002128F1 /* NSArray+JYSafe.m */; };
+		9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64666720905324002128F1 /* NSString+JYSafe.m */; };
 		9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */; };
 		9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */; };
 		9D8AC3F0206B9B3A00BD6FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8AC3EE206B9B3A00BD6FB5 /* Main.storyboard */; };
@@ -46,6 +50,14 @@
 /* Begin PBXFileReference section */
 		9D64665920901CA3002128F1 /* JYTPShareTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTPShareTool.h; sourceTree = "<group>"; };
 		9D64665A20901CA3002128F1 /* JYTPShareTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPShareTool.m; sourceTree = "<group>"; };
+		9D64665D20905094002128F1 /* NSDictionary+JYSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JYSafe.h"; sourceTree = "<group>"; };
+		9D64665E20905094002128F1 /* NSDictionary+JYSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JYSafe.m"; sourceTree = "<group>"; };
+		9D646660209050E9002128F1 /* NSObject+JYRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JYRuntime.h"; sourceTree = "<group>"; };
+		9D646661209050E9002128F1 /* NSObject+JYRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JYRuntime.m"; sourceTree = "<group>"; };
+		9D64666320905143002128F1 /* NSArray+JYSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JYSafe.h"; sourceTree = "<group>"; };
+		9D64666420905143002128F1 /* NSArray+JYSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JYSafe.m"; sourceTree = "<group>"; };
+		9D64666620905324002128F1 /* NSString+JYSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYSafe.h"; sourceTree = "<group>"; };
+		9D64666720905324002128F1 /* NSString+JYSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYSafe.m"; sourceTree = "<group>"; };
 		9D8AC3E5206B9B3A00BD6FB5 /* JYSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8AC3E8206B9B3A00BD6FB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,9 +120,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D64665C20905076002128F1 /* JYSafe */ = {
+			isa = PBXGroup;
+			children = (
+				9D64665D20905094002128F1 /* NSDictionary+JYSafe.h */,
+				9D64665E20905094002128F1 /* NSDictionary+JYSafe.m */,
+				9D64666320905143002128F1 /* NSArray+JYSafe.h */,
+				9D64666420905143002128F1 /* NSArray+JYSafe.m */,
+				9D64666620905324002128F1 /* NSString+JYSafe.h */,
+				9D64666720905324002128F1 /* NSString+JYSafe.m */,
+				9D646660209050E9002128F1 /* NSObject+JYRuntime.h */,
+				9D646661209050E9002128F1 /* NSObject+JYRuntime.m */,
+			);
+			path = JYSafe;
+			sourceTree = "<group>";
+		};
 		9D8AC3DC206B9B3900BD6FB5 = {
 			isa = PBXGroup;
 			children = (
+				9D64665C20905076002128F1 /* JYSafe */,
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
 				9DDD1DD6206C996B00D35594 /* JYTPHelper */,
 				9D8AC3E7206B9B3A00BD6FB5 /* JYSDKDemo */,
@@ -363,9 +391,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */,
+				9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */,
+				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
 				9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */,
+				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
 				9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */,
 				9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */,
+				9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */,
 				9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */,
 				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
 			);
