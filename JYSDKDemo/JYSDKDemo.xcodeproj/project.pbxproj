@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */; };
+		9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */; };
+		9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */; };
+		9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E942D2091DEDE00BF3E43 /* UIImage+JYExtension.m */; };
 		9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64665A20901CA3002128F1 /* JYTPShareTool.m */; };
 		9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64665E20905094002128F1 /* NSDictionary+JYSafe.m */; };
 		9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D646661209050E9002128F1 /* NSObject+JYRuntime.m */; };
@@ -48,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D0E94232091D68A00BF3E43 /* NSString+JYDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYDevice.h"; sourceTree = "<group>"; };
+		9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYDevice.m"; sourceTree = "<group>"; };
+		9D0E94262091D84A00BF3E43 /* UIButton+JYOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JYOptions.h"; sourceTree = "<group>"; };
+		9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JYOptions.m"; sourceTree = "<group>"; };
+		9D0E94292091D92E00BF3E43 /* UIView+JYRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYRect.h"; sourceTree = "<group>"; };
+		9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYRect.m"; sourceTree = "<group>"; };
+		9D0E942C2091DEDE00BF3E43 /* UIImage+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYExtension.h"; sourceTree = "<group>"; };
+		9D0E942D2091DEDE00BF3E43 /* UIImage+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYExtension.m"; sourceTree = "<group>"; };
 		9D64665920901CA3002128F1 /* JYTPShareTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTPShareTool.h; sourceTree = "<group>"; };
 		9D64665A20901CA3002128F1 /* JYTPShareTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPShareTool.m; sourceTree = "<group>"; };
 		9D64665D20905094002128F1 /* NSDictionary+JYSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JYSafe.h"; sourceTree = "<group>"; };
@@ -120,6 +132,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0E94222091D48E00BF3E43 /* JKCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E94232091D68A00BF3E43 /* NSString+JYDevice.h */,
+				9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */,
+				9D0E94262091D84A00BF3E43 /* UIButton+JYOptions.h */,
+				9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */,
+				9D0E94292091D92E00BF3E43 /* UIView+JYRect.h */,
+				9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */,
+				9D0E942C2091DEDE00BF3E43 /* UIImage+JYExtension.h */,
+				9D0E942D2091DEDE00BF3E43 /* UIImage+JYExtension.m */,
+			);
+			path = JKCategorys;
+			sourceTree = "<group>";
+		};
 		9D64665C20905076002128F1 /* JYSafe */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +165,7 @@
 		9D8AC3DC206B9B3900BD6FB5 = {
 			isa = PBXGroup;
 			children = (
+				9D0E94222091D48E00BF3E43 /* JKCategorys */,
 				9D64665C20905076002128F1 /* JYSafe */,
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
 				9DDD1DD6206C996B00D35594 /* JYTPHelper */,
@@ -390,16 +418,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */,
 				9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */,
+				9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */,
 				9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */,
 				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
 				9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */,
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
 				9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */,
+				9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */,
 				9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */,
 				9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */,
 				9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */,
 				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
+				9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
