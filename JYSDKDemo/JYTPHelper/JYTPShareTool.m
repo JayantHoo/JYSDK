@@ -21,8 +21,8 @@
     switch (shareType) {
         case WeChatMomentsType:
         {
-            if (![WXApi isWXAppInstalled]) return;
-            [[JYTPHelper defaultHelper] weChatShareWebURL:url description:subTitle thumbImage:image title:title scene:WXShareSceneMoments finished:^(JYShareResponse *response) {
+            if (![JYWCHelper jy_isWXAppInstalled]) return;
+            [[JYWCHelper defaultHelper] weChatShareWebURL:url description:subTitle thumbImage:image title:title scene:WXShareSceneMoments finished:^(JYShareResponse *response) {
                 if (finished) {
                     finished(response.success);
                 }
@@ -31,8 +31,8 @@
             break;
         case WeChatFriendsType:
         {
-            if (![WXApi isWXAppInstalled]) return;
-            [[JYTPHelper defaultHelper] weChatShareWebURL:url description:subTitle thumbImage:image title:title scene:WXShareSceneSession finished:^(JYShareResponse *response) {
+            if (![JYWCHelper jy_isWXAppInstalled]) return;
+            [[JYWCHelper defaultHelper] weChatShareWebURL:url description:subTitle thumbImage:image title:title scene:WXShareSceneSession finished:^(JYShareResponse *response) {
                 if (finished) {
                     finished(response.success);
                 }
@@ -41,8 +41,8 @@
             break;
         case QQFriendsType:
         {
-            if (![QQApiInterface isQQInstalled]) return;
-            [[JYTPHelper defaultHelper] qqShareWebURL:url title:title description:subTitle thumbImage:image scene:QQShareSceneSession finished:^(JYShareResponse *response) {
+            if (![JYQQHelper jy_isQQAppInstalled]) return;
+            [[JYQQHelper defaultHelper] qqShareWebURL:url title:title description:subTitle thumbImage:image scene:QQShareSceneSession finished:^(JYShareResponse *response) {
                 if (finished) {
                     finished(response.success);
                 }
@@ -51,8 +51,8 @@
             break;
         case QQZoneType:
         {
-            if (![QQApiInterface isQQInstalled]) return;
-            [[JYTPHelper defaultHelper] qqShareWebURL:url title:title description:subTitle thumbImage:image scene:QQShareSceneQZone finished:^(JYShareResponse *response) {
+            if (![JYQQHelper jy_isQQAppInstalled]) return;
+            [[JYQQHelper defaultHelper] qqShareWebURL:url title:title description:subTitle thumbImage:image scene:QQShareSceneQZone finished:^(JYShareResponse *response) {
                 if (finished) {
                     finished(response.success);
                 }
@@ -61,7 +61,7 @@
             break;
         case WeiboType:
         {
-            [[JYTPHelper defaultHelper] weiboShareUrl:url title:title description:subTitle image:image finished:^(JYShareResponse *response) {
+            [[JYWBHelper defaultHelper] weiboShareUrl:url title:title description:subTitle image:image finished:^(JYShareResponse *response) {
                 if (finished) {
                     finished(response.success);
                 }

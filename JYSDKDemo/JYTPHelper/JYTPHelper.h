@@ -7,12 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/QQApiInterface.h>
-#import "WXApi.h"
-#import "WeiboSDK.h"
+#import "JYWCHelper.h"
+#import "JYQQHelper.h"
+#import "JYWBHelper.h"
+#import "JYAliPayHelper.h"
 
-@class JYTPUserInfo;
+//typedef NS_OPTIONS(NSInteger, JYTPHelperType) {//接入哪个第三方
+//    JYTPHelperTypeWechat = 0,       //微信
+//    JYTPHelperTypeQQ = 1 << 0,      //QQ
+//    JYTPHelperTypeWeibo = 1 << 1,   //微博
+//    JYTPHelperTypeAlipay = 1 << 2   //支付宝
+//};
+//多选项枚举用法
+//JYTPHelperType type = JYTPHelperTypeWechat|JYTPHelperTypeQQ|JYTPHelperTypeWeibo|JYTPHelperTypeAlipay;
+//if(type&JYTPHelperTypeWechat)
 
 typedef NS_ENUM(NSInteger, LoginType) {
     qqLogin      = 0,        /**< QQ登录       */
@@ -25,70 +33,7 @@ typedef NS_ENUM(NSInteger, PayType) {
     weChatPay  = 1,        /**< 微信支付      */
 };
 
-typedef NS_ENUM(NSInteger, QQShareScene) {
-    QQShareSceneSession = 0,        /**< 聊天界面    */
-    QQShareSceneQZone   = 1,        /**< QQ空间      */
-};
-
-typedef NS_ENUM(NSInteger, WXShareScene) {
-    WXShareSceneSession  = 0,        /**< 聊天界面    */
-    WXShareSceneMoments = 1,        /**< 朋友圈      */
-    WXShareSceneFavorite = 2,        /**< 收藏       */
-};
-
-@interface JYLoginResponse : NSObject
-/*
- * 第三方登录是否成功
- */
-@property (nonatomic, assign, getter=isSucess, readonly) BOOL success;
-
-/*
- * 第三方登录的错误原因
- */
-@property (nonatomic, copy, readonly) NSString *errorString;
-
-/*
- * 第三方的唯一标识
- */
-@property (nonatomic, copy, readonly) NSString *uid;
-
-/*
- * 第三方的个人信息
- */
-@property (nonatomic, copy, readonly) JYTPUserInfo *userInfo;
-
-@end
-
-////////////////////////////////////////  JYPayResponse  /////////////////////////////////////////////
-@interface JYPayResponse : NSObject
-/*
- * 第三方支付是否成功
- */
-@property (nonatomic, assign, getter=isSucess, readonly) BOOL success;
-
-/*
- * 第三方支付的错误原因
- */
-@property (nonatomic, copy, readonly) NSString *errorString;
-
-@end
-
-////////////////////////////////////////  JYShareResponse  /////////////////////////////////////////////
-@interface JYShareResponse : NSObject
-/*
- * 第三方分享是否成功
- */
-@property (nonatomic, assign, getter=isSucess, readonly) BOOL success;
-/*
- * 第三方分享错误原因
- */
-@property (nonatomic, copy, readonly) NSString *errorStr;
-
-@end
-
 @interface JYTPHelper : NSObject
-
-+(instancetype) defaultHelper;
 //注册微信
 + (void)registerWeChatAppid:(NSString *)wxAppId secret:(NSString *)wxSecret;
 //注册QQ
@@ -99,89 +44,11 @@ typedef NS_ENUM(NSInteger, WXShareScene) {
 + (void)registerAlipayScheme:(NSString *) appScheme;
 
 + (BOOL)handleOpenURL:(NSURL *)url;
-//是否有安装微信
-+(BOOL) jy_isWXAppInstalled;
-//是否有安装QQ
-+(BOOL) jy_isQQAppInstalled;
-//是否有安装微博
-+(BOOL) jy_isWeiboAppInstalled;
+
 //第三方---登录
-- (void)jy_LoginType:(LoginType)loginType finished:(void(^)(JYLoginResponse *response))finished;
++ (void)jy_LoginType:(LoginType)loginType finished:(void(^)(JYLoginResponse *response))finished;
 //第三方支付（支付签名全部由后台完成）
-- (void)jy_PayInformation:(NSDictionary *)resultDict PayType:(PayType)payType finished:(void(^)(JYPayResponse *response))finished;
++ (void)jy_PayInformation:(NSDictionary *)resultDict PayType:(PayType)payType finished:(void(^)(JYPayResponse *response))finished;
 
-#pragma mark - 手机QQ分享  [只有`新闻`(网页)和音乐可以分享到空间]
-- (void)qqShareText:(NSString *)text
-            finshed:(void(^)(JYShareResponse *response))finished;
-
-- (void)qqShareImage:(NSData *)previewImageData
-       originalImage:(NSData *)originalImageData
-               title:(NSString *)title
-         description:(NSString *)description
-            finished:(void(^)(JYShareResponse *response))finished;
-
-- (void)qqShareWebURL:(NSString *)url
-                title:(NSString *)title
-          description:(NSString *)description
-           thumbImage:(UIImage *)thumbImage
-                scene:(QQShareScene)scene
-             finished:(void(^)(JYShareResponse *response))finished;
-
-/// 分享音乐到QQ previewImageUrl 和 previewImageData只需要有一个即可
-- (void)qqShareMusicURL:(NSString *)flashUrl
-                jumpURL:(NSString *)jumpUrl
-        previewImageURL:(NSString *)previewImageUrl
-       previewImageData:(NSData *)previewImageData
-                  title:(NSString *)title
-            description:(NSString *)description
-                  scene:(QQShareScene)scene
-               finished:(void(^)(JYShareResponse *response))finished;
-
-#pragma mark - 微信分享 [文字不可以分享到朋友圈]
-- (void)weChatShareText:(NSString *)text
-               finished:(void(^)(JYShareResponse *response))finished;
-
-- (void)weChatShareThumbImage:(UIImage *)thumbImage
-                originalImage:(NSData *)originalImageData
-                        scene:(WXShareScene)scene
-                     finished:(void(^)(JYShareResponse *response))finished;
-
-- (void)weChatShareWebURL:(NSString *)url
-              description:(NSString *)description
-               thumbImage:(UIImage *)thumbImage
-                    title:(NSString *)title
-                    scene:(WXShareScene)scene
-                 finished:(void(^)(JYShareResponse *response))finished;
-
-- (void)weChatShareMusicURL:(NSString *)musicUrl
-               musicDataURL:(NSString *)musicDataUrl
-                 thumbImage:(UIImage *)thumbImage
-                      title:(NSString *)title
-                description:(NSString *)description
-                      scene:(WXShareScene)scene
-                   finished:(void(^)(JYShareResponse *response))finished;
-
-- (void)weChatShareVideoURL:(NSString *)videoUrl
-                 thumbImage:(UIImage *)thumbImage
-                      title:(NSString *)title
-                description:(NSString *)description
-                      scene:(WXShareScene)scene
-                   finished:(void(^)(JYShareResponse *response))finished;
-
-#pragma mark - 微博分享
-
-- (void)weiboShareText:(NSString *)text
-              finished:(void(^)(JYShareResponse *response))finished;
-
-- (void)weiboShareImage:(UIImage *)image
-                   text:(NSString *)text
-                finshed:(void(^)(JYShareResponse *response))finished;
-
-
--(void)weiboShareUrl:(NSString *)url
-               title:(NSString *)title
-         description:(NSString *)description
-               image:(UIImage *)image
-            finished:(void(^)(JYShareResponse *response))finished;
 
 @end

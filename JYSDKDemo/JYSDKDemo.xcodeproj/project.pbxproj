@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208CAA2120E1EFD600374358 /* JYWCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2020E1EFD600374358 /* JYWCHelper.m */; };
+		208CAA2420E1F26C00374358 /* JYTPHelperConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2320E1F26C00374358 /* JYTPHelperConfig.m */; };
+		208CAA2720E21AA900374358 /* JYQQHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2620E21AA900374358 /* JYQQHelper.m */; };
+		208CAA2D20E22F7600374358 /* JYWBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2B20E22F7500374358 /* JYWBHelper.m */; };
+		208CAA3020E2308E00374358 /* JYAliPayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2F20E2308E00374358 /* JYAliPayHelper.m */; };
+		208CAA3220E2378000374358 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DDD206CD2AF00D35594 /* AlipaySDK.framework */; };
+		208CAA3420E2379700374358 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */; };
+		208CAA3720E23B3900374358 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA3620E23B3800374358 /* SystemConfiguration.framework */; };
+		208CAA3920E23E1A00374358 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA3820E23E1900374358 /* libc++.tbd */; };
+		208CAA3B20E23E2100374358 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA3A20E23E2000374358 /* libz.tbd */; };
+		208CAA3D20E23E2E00374358 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA3C20E23E2D00374358 /* CoreTelephony.framework */; };
+		208CAA3F20E23E3B00374358 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA3E20E23E3B00374358 /* QuartzCore.framework */; };
+		208CAA4120E23E4300374358 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4020E23E4300374358 /* CoreText.framework */; };
+		208CAA4320E23E4B00374358 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4220E23E4B00374358 /* CoreGraphics.framework */; };
+		208CAA4520E23E5300374358 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4420E23E5300374358 /* UIKit.framework */; };
+		208CAA4720E23E5E00374358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4620E23E5E00374358 /* Foundation.framework */; };
+		208CAA4920E23E6800374358 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4820E23E6700374358 /* CFNetwork.framework */; };
+		208CAA4B20E23E7100374358 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4A20E23E7000374358 /* CoreMotion.framework */; };
+		208CAA4E20E3375200374358 /* JYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA4D20E3375200374358 /* JYHelper.m */; };
+		77AAA55CED45EC385B87FCBB /* libPods-JYSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A23C5A2136C0CFC7F2AF6 /* libPods-JYSDKDemo.a */; };
 		9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */; };
 		9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */; };
 		9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */; };
@@ -18,7 +38,6 @@
 		9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64666720905324002128F1 /* NSString+JYSafe.m */; };
 		9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */; };
 		9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */; };
-		9D8AC3F0206B9B3A00BD6FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8AC3EE206B9B3A00BD6FB5 /* Main.storyboard */; };
 		9D8AC3F2206B9B3A00BD6FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8AC3F1206B9B3A00BD6FB5 /* Assets.xcassets */; };
 		9D8AC3F5206B9B3A00BD6FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8AC3F3206B9B3A00BD6FB5 /* LaunchScreen.storyboard */; };
 		9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC3F7206B9B3A00BD6FB5 /* main.m */; };
@@ -26,11 +45,6 @@
 		9D8AC40D206B9B3A00BD6FB5 /* JYSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC40C206B9B3A00BD6FB5 /* JYSDKDemoUITests.m */; };
 		9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */; };
 		9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD1DDC206CD2AF00D35594 /* AlipaySDK.bundle */; };
-		9DDD1DDF206CD2AF00D35594 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DDD206CD2AF00D35594 /* AlipaySDK.framework */; };
-		9DDD1DE5206CD2CA00D35594 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DE1206CD2CA00D35594 /* libWeiboSDK.a */; };
-		9DDD1DE6206CD2CA00D35594 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD1DE3206CD2CA00D35594 /* WeiboSDK.bundle */; };
-		9DDD1DEC206CD2EA00D35594 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DE8206CD2EA00D35594 /* libWeChatSDK.a */; };
-		9DDD1DEF206CD39E00D35594 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */; };
 		9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +66,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		208CAA1E20E1EAF200374358 /* JYMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYMacros.h; sourceTree = "<group>"; };
+		208CAA1F20E1EFD600374358 /* JYWCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWCHelper.h; sourceTree = "<group>"; };
+		208CAA2020E1EFD600374358 /* JYWCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWCHelper.m; sourceTree = "<group>"; };
+		208CAA2220E1F26C00374358 /* JYTPHelperConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTPHelperConfig.h; sourceTree = "<group>"; };
+		208CAA2320E1F26C00374358 /* JYTPHelperConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPHelperConfig.m; sourceTree = "<group>"; };
+		208CAA2520E21AA900374358 /* JYQQHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYQQHelper.h; sourceTree = "<group>"; };
+		208CAA2620E21AA900374358 /* JYQQHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYQQHelper.m; sourceTree = "<group>"; };
+		208CAA2B20E22F7500374358 /* JYWBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYWBHelper.m; sourceTree = "<group>"; };
+		208CAA2C20E22F7500374358 /* JYWBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYWBHelper.h; sourceTree = "<group>"; };
+		208CAA2E20E2308E00374358 /* JYAliPayHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYAliPayHelper.h; sourceTree = "<group>"; };
+		208CAA2F20E2308E00374358 /* JYAliPayHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYAliPayHelper.m; sourceTree = "<group>"; };
+		208CAA3620E23B3800374358 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		208CAA3820E23E1900374358 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		208CAA3A20E23E2000374358 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		208CAA3C20E23E2D00374358 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		208CAA3E20E23E3B00374358 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		208CAA4020E23E4300374358 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		208CAA4220E23E4B00374358 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		208CAA4420E23E5300374358 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		208CAA4620E23E5E00374358 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		208CAA4820E23E6700374358 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		208CAA4A20E23E7000374358 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		208CAA4C20E3375200374358 /* JYHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYHelper.h; sourceTree = "<group>"; };
+		208CAA4D20E3375200374358 /* JYHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYHelper.m; sourceTree = "<group>"; };
+		6C26A93908412CE85C5489E6 /* Pods-JYSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9D0E94232091D68A00BF3E43 /* NSString+JYDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYDevice.h"; sourceTree = "<group>"; };
 		9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYDevice.m"; sourceTree = "<group>"; };
 		9D0E94262091D84A00BF3E43 /* UIButton+JYOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JYOptions.h"; sourceTree = "<group>"; };
@@ -75,7 +114,6 @@
 		9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9D8AC3EB206B9B3A00BD6FB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9D8AC3EF206B9B3A00BD6FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D8AC3F1206B9B3A00BD6FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8AC3F4206B9B3A00BD6FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D8AC3F6206B9B3A00BD6FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,17 +128,11 @@
 		9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPUserInfo.m; sourceTree = "<group>"; };
 		9DDD1DDC206CD2AF00D35594 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		9DDD1DDD206CD2AF00D35594 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		9DDD1DE1206CD2CA00D35594 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
-		9DDD1DE2206CD2CA00D35594 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
-		9DDD1DE3206CD2CA00D35594 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
-		9DDD1DE4206CD2CA00D35594 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		9DDD1DE8206CD2EA00D35594 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		9DDD1DE9206CD2EA00D35594 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		9DDD1DEA206CD2EA00D35594 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		9DDD1DEB206CD2EA00D35594 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		9DDD1DF0206CEE9A00D35594 /* JYTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTPHelper.h; sourceTree = "<group>"; };
 		9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTPHelper.m; sourceTree = "<group>"; };
+		E06A23C5A2136C0CFC7F2AF6 /* libPods-JYSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39A851F101716E6EE6D9168 /* Pods-JYSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +140,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDD1DDF206CD2AF00D35594 /* AlipaySDK.framework in Frameworks */,
-				9DDD1DEF206CD39E00D35594 /* TencentOpenAPI.framework in Frameworks */,
-				9DDD1DE5206CD2CA00D35594 /* libWeiboSDK.a in Frameworks */,
-				9DDD1DEC206CD2EA00D35594 /* libWeChatSDK.a in Frameworks */,
+				208CAA4B20E23E7100374358 /* CoreMotion.framework in Frameworks */,
+				208CAA4920E23E6800374358 /* CFNetwork.framework in Frameworks */,
+				208CAA4720E23E5E00374358 /* Foundation.framework in Frameworks */,
+				208CAA4520E23E5300374358 /* UIKit.framework in Frameworks */,
+				208CAA4320E23E4B00374358 /* CoreGraphics.framework in Frameworks */,
+				208CAA4120E23E4300374358 /* CoreText.framework in Frameworks */,
+				208CAA3F20E23E3B00374358 /* QuartzCore.framework in Frameworks */,
+				208CAA3D20E23E2E00374358 /* CoreTelephony.framework in Frameworks */,
+				208CAA3B20E23E2100374358 /* libz.tbd in Frameworks */,
+				208CAA3920E23E1A00374358 /* libc++.tbd in Frameworks */,
+				208CAA3720E23B3900374358 /* SystemConfiguration.framework in Frameworks */,
+				208CAA3420E2379700374358 /* TencentOpenAPI.framework in Frameworks */,
+				208CAA3220E2378000374358 /* AlipaySDK.framework in Frameworks */,
+				77AAA55CED45EC385B87FCBB /* libPods-JYSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +174,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		208CAA1C20E1EAB100374358 /* JYConfig */ = {
+			isa = PBXGroup;
+			children = (
+				208CAA1E20E1EAF200374358 /* JYMacros.h */,
+			);
+			path = JYConfig;
+			sourceTree = "<group>";
+		};
+		208CAA3120E2378000374358 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				208CAA4A20E23E7000374358 /* CoreMotion.framework */,
+				208CAA4820E23E6700374358 /* CFNetwork.framework */,
+				208CAA4620E23E5E00374358 /* Foundation.framework */,
+				208CAA4420E23E5300374358 /* UIKit.framework */,
+				208CAA4220E23E4B00374358 /* CoreGraphics.framework */,
+				208CAA4020E23E4300374358 /* CoreText.framework */,
+				208CAA3E20E23E3B00374358 /* QuartzCore.framework */,
+				208CAA3C20E23E2D00374358 /* CoreTelephony.framework */,
+				208CAA3A20E23E2000374358 /* libz.tbd */,
+				208CAA3820E23E1900374358 /* libc++.tbd */,
+				208CAA3620E23B3800374358 /* SystemConfiguration.framework */,
+				E06A23C5A2136C0CFC7F2AF6 /* libPods-JYSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D0E94222091D48E00BF3E43 /* JKCategorys */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +234,7 @@
 		9D8AC3DC206B9B3900BD6FB5 = {
 			isa = PBXGroup;
 			children = (
+				208CAA1C20E1EAB100374358 /* JYConfig */,
 				9D0E94222091D48E00BF3E43 /* JKCategorys */,
 				9D64665C20905076002128F1 /* JYSafe */,
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
@@ -173,6 +243,8 @@
 				9D8AC400206B9B3A00BD6FB5 /* JYSDKDemoTests */,
 				9D8AC40B206B9B3A00BD6FB5 /* JYSDKDemoUITests */,
 				9D8AC3E6206B9B3A00BD6FB5 /* Products */,
+				208CAA3120E2378000374358 /* Frameworks */,
+				E5F48057EAD340FBA762DDAB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,7 +265,6 @@
 				9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */,
 				9D8AC3EB206B9B3A00BD6FB5 /* ViewController.h */,
 				9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */,
-				9D8AC3EE206B9B3A00BD6FB5 /* Main.storyboard */,
 				9D8AC3F1206B9B3A00BD6FB5 /* Assets.xcassets */,
 				9D8AC3F3206B9B3A00BD6FB5 /* LaunchScreen.storyboard */,
 				9D8AC3F6206B9B3A00BD6FB5 /* Info.plist */,
@@ -223,10 +294,22 @@
 		9DDD1DD6206C996B00D35594 /* JYTPHelper */ = {
 			isa = PBXGroup;
 			children = (
-				9DDD1DD7206C9A7200D35594 /* JYTPUserInfo.h */,
-				9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */,
 				9DDD1DF0206CEE9A00D35594 /* JYTPHelper.h */,
 				9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */,
+				208CAA4C20E3375200374358 /* JYHelper.h */,
+				208CAA4D20E3375200374358 /* JYHelper.m */,
+				208CAA1F20E1EFD600374358 /* JYWCHelper.h */,
+				208CAA2020E1EFD600374358 /* JYWCHelper.m */,
+				208CAA2520E21AA900374358 /* JYQQHelper.h */,
+				208CAA2620E21AA900374358 /* JYQQHelper.m */,
+				208CAA2C20E22F7500374358 /* JYWBHelper.h */,
+				208CAA2B20E22F7500374358 /* JYWBHelper.m */,
+				208CAA2E20E2308E00374358 /* JYAliPayHelper.h */,
+				208CAA2F20E2308E00374358 /* JYAliPayHelper.m */,
+				208CAA2220E1F26C00374358 /* JYTPHelperConfig.h */,
+				208CAA2320E1F26C00374358 /* JYTPHelperConfig.m */,
+				9DDD1DD7206C9A7200D35594 /* JYTPUserInfo.h */,
+				9DDD1DD8206C9A7200D35594 /* JYTPUserInfo.m */,
 				9D64665920901CA3002128F1 /* JYTPShareTool.h */,
 				9D64665A20901CA3002128F1 /* JYTPShareTool.m */,
 			);
@@ -237,8 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				9DDD1DED206CD39E00D35594 /* QQ */,
-				9DDD1DE7206CD2EA00D35594 /* WeChat */,
-				9DDD1DE0206CD2CA00D35594 /* libWeiboSDK */,
 				9DDD1DDB206CD2AF00D35594 /* AliPay */,
 			);
 			path = ThirdParty;
@@ -253,34 +334,21 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
-		9DDD1DE0206CD2CA00D35594 /* libWeiboSDK */ = {
-			isa = PBXGroup;
-			children = (
-				9DDD1DE1206CD2CA00D35594 /* libWeiboSDK.a */,
-				9DDD1DE2206CD2CA00D35594 /* WBHttpRequest.h */,
-				9DDD1DE3206CD2CA00D35594 /* WeiboSDK.bundle */,
-				9DDD1DE4206CD2CA00D35594 /* WeiboSDK.h */,
-			);
-			path = libWeiboSDK;
-			sourceTree = "<group>";
-		};
-		9DDD1DE7206CD2EA00D35594 /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				9DDD1DE8206CD2EA00D35594 /* libWeChatSDK.a */,
-				9DDD1DE9206CD2EA00D35594 /* WechatAuthSDK.h */,
-				9DDD1DEA206CD2EA00D35594 /* WXApi.h */,
-				9DDD1DEB206CD2EA00D35594 /* WXApiObject.h */,
-			);
-			path = WeChat;
-			sourceTree = "<group>";
-		};
 		9DDD1DED206CD39E00D35594 /* QQ */ = {
 			isa = PBXGroup;
 			children = (
 				9DDD1DEE206CD39E00D35594 /* TencentOpenAPI.framework */,
 			);
 			path = QQ;
+			sourceTree = "<group>";
+		};
+		E5F48057EAD340FBA762DDAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F39A851F101716E6EE6D9168 /* Pods-JYSDKDemo.debug.xcconfig */,
+				6C26A93908412CE85C5489E6 /* Pods-JYSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8AC411206B9B3A00BD6FB5 /* Build configuration list for PBXNativeTarget "JYSDKDemo" */;
 			buildPhases = (
+				2B535455AF87CD671551A27A /* [CP] Check Pods Manifest.lock */,
 				9D8AC3E1206B9B3A00BD6FB5 /* Sources */,
 				9D8AC3E2206B9B3A00BD6FB5 /* Frameworks */,
 				9D8AC3E3206B9B3A00BD6FB5 /* Resources */,
+				8047E97BD1B71A4775D5CD01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,9 +461,7 @@
 			files = (
 				9D8AC3F5206B9B3A00BD6FB5 /* LaunchScreen.storyboard in Resources */,
 				9D8AC3F2206B9B3A00BD6FB5 /* Assets.xcassets in Resources */,
-				9DDD1DE6206CD2CA00D35594 /* WeiboSDK.bundle in Resources */,
 				9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */,
-				9D8AC3F0206B9B3A00BD6FB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,25 +481,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B535455AF87CD671551A27A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JYSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8047E97BD1B71A4775D5CD01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo-resources.sh",
+				"${PODS_ROOT}/Weibo_SDK/libWeiboSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D8AC3E1206B9B3A00BD6FB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */,
-				9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */,
 				9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */,
 				9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */,
 				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
-				9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */,
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
-				9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */,
 				9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */,
-				9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */,
 				9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */,
+				9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */,
+				208CAA4E20E3375200374358 /* JYHelper.m in Sources */,
+				9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */,
+				208CAA2120E1EFD600374358 /* JYWCHelper.m in Sources */,
+				208CAA2D20E22F7600374358 /* JYWBHelper.m in Sources */,
+				9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */,
+				9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */,
+				208CAA3020E2308E00374358 /* JYAliPayHelper.m in Sources */,
+				208CAA2420E1F26C00374358 /* JYTPHelperConfig.m in Sources */,
+				9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */,
 				9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */,
 				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
-				9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */,
+				208CAA2720E21AA900374358 /* JYQQHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,14 +580,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9D8AC3EE206B9B3A00BD6FB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D8AC3EF206B9B3A00BD6FB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9D8AC3F3206B9B3A00BD6FB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -592,6 +697,7 @@
 		};
 		9D8AC412206B9B3A00BD6FB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F39A851F101716E6EE6D9168 /* Pods-JYSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -608,7 +714,7 @@
 					"$(PROJECT_DIR)/ThirdParty/libWeiboSDK",
 					"$(PROJECT_DIR)/ThirdParty/WeChat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.isenu.JYSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jayant.JYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -616,6 +722,7 @@
 		};
 		9D8AC413206B9B3A00BD6FB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C26A93908412CE85C5489E6 /* Pods-JYSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,7 +739,7 @@
 					"$(PROJECT_DIR)/ThirdParty/libWeiboSDK",
 					"$(PROJECT_DIR)/ThirdParty/WeChat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.isenu.JYSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jayant.JYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

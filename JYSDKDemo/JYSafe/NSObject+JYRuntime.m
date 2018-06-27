@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+JYRuntime.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (JYRuntime)
 
