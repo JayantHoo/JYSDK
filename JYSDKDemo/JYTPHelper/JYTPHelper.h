@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, PayType) {
 };
 
 @interface JYTPHelper : NSObject
+
 //注册微信
 + (void)registerWeChatAppid:(NSString *)wxAppId secret:(NSString *)wxSecret;
 //注册QQ

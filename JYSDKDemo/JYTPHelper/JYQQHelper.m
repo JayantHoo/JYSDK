@@ -17,7 +17,6 @@
 
 @implementation JYQQHelper
 
-
 + (void)registerQQApp:(NSString *)qqAppId secret:(NSString *)qqSecret
 {
 // 2.注册QQ

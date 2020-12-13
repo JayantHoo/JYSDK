@@ -6,7 +6,7 @@
 //  Copyright © 2018年 isenu. All rights reserved.
 //  
 
-#import "JYHelper.h"
+#import "JYDefaultHelper.h"
 #import <WXApi.h>
 
 
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, WXShareScene) {
     WXShareSceneFavorite = 2,        /**< 收藏       */
 };
 
-@interface JYWCHelper : JYHelper
+@interface JYWCHelper : JYDefaultHelper
 
 //注册微信
 + (void)registerWeChatAppid:(NSString *)wxAppId secret:(NSString *)wxSecret;
@@ -52,6 +52,15 @@ typedef NS_ENUM(NSInteger, WXShareScene) {
                     title:(NSString *)title
                     scene:(WXShareScene)scene
                  finished:(void(^)(JYShareResponse *response))finished;
+
+- (void)weChatShareMiniProgramWithURL:(NSString *)url
+                                 path:(NSString *)path
+                             userName:(NSString *)userName
+                          description:(NSString *)description
+                            miniImage:(UIImage *)miniImage
+                           thumbImage:(UIImage *)thumbImage
+                                title:(NSString *)title
+                             finished:(void(^)(JYShareResponse *response))finished;
 
 - (void)weChatShareMusicURL:(NSString *)musicUrl
                musicDataURL:(NSString *)musicDataUrl

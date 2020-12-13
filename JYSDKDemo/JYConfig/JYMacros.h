@@ -9,26 +9,73 @@
 #ifndef JYMacros_h
 #define JYMacros_h
 
-#define APPDELEGATE    (AppDelegate *)[[UIApplication sharedApplication] delegate]
+//AppDelegate
+#define JYAPPDELEGATE           (AppDelegate *)[[UIApplication sharedApplication] delegate]
+//NSUserDefaults
+#define JYUSERDEFAULTS          [NSUserDefaults standardUserDefaults]
+//通知中心
+#define JYNOTIFICATIONCENTER    [NSNotificationCenter defaultCenter]
 
-#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
-#define STATUSBARHEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+// IOS版本
+#define JYIOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
 
-#define NAVIGATIONBARHEIGHT 44
+//屏幕尺寸
+#define JYSCREENBOUNDS      ([[UIScreen mainScreen] bounds])
+#define JYSCREENWIDTH       ([UIScreen mainScreen].bounds.size.width)
+#define JYSCREENHEIGHT      ([UIScreen mainScreen].bounds.size.height)
+#define JYSTATUSBARHEIGHT   ([[UIApplication sharedApplication] statusBarFrame].size.height)
 
-#define NAVIGATIONBARANDSTATUSBARHEIGHT (STATUSBARHEIGHT + NAVIGATIONBARHEIGHT)
+#define JYNAVIGATIONBARHEIGHT 44
+
+#define JYNAVIGATIONBARANDSTATUSBARHEIGHT (JYSTATUSBARHEIGHT + JYNAVIGATIONBARHEIGHT)
 
 
 //----------------------------是否是iPhone X------------------------
 #define ISiPhoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(812.f, 375.f), [UIScreen mainScreen].bounds.size))
 
 //----------------------------尺寸比例定义------------------------
-#define AUTOSIZESCALEXFOR6S  (SCREENWIDTH/375.0)
+#define JYAUTOSIZESCALEXFOR6S  (JYSCREENWIDTH/375.0)
 
-#define SCALELENGTH(x)      (x*AUTOSIZESCALEXFOR6S) //比例长度
+#define JYSCALESIZE(x)      (x*JYAUTOSIZESCALEXFOR6S) //比例大小
 
-#define SCALEFONT(x)      [UIFont systemFontOfSize:x*autoSizeScaleXFor6s]   //字体比例大小
+#define JYFONT(x)      [UIFont systemFontOfSize:(x)]   //设置字体大小
+#define JYBOLDFONT(x)   [UIFont boldSystemFontOfSize:(x)] //设置加粗字体大小
+
+// 是否为空对象
+#define JYObjectIsNil(__object)  ((nil == __object) || [__object isKindOfClass:[NSNull class]])
+
+// 字符串为空
+#define JYStringIsEmpty(__string) ((__string.length == 0) || JYObjectIsNil(__string))
+
+// 字符串不为空
+#define JYStringIsNotEmpty(__string)  (!JYStringIsEmpty(__string))
+
+// 数组为空
+#define JYArrayIsEmpty(__array) ((JYObjectIsNil(__array)) || (__array.count==0))
+
+// 颜色
+#define JYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 颜色+透明度
+#define JYAlphaColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define JYRandomColor JYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+/**
+ * 设置颜色
+ */
+#define JYColorFromHexString(__hexString__) [UIColor colorFromHexString:__hexString__]
+
+// 设置图片
+#define JYImageNamed(__imageName) [UIImage imageNamed:__imageName]
+
+// AppCaches 文件夹路径
+#define JYCachesDirectory [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+
+// App DocumentDirectory 文件夹路径
+#define JYDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) lastObject]
+
 
 //-------------------------------—— Log -------------------------------
 #ifdef DEBUG
@@ -70,5 +117,16 @@
 #endif
 #endif
 #endif
+
+/// 适配 iOS 11
+#define JYAdjustsScrollViewInsets_Never \
+if (@available(iOS 11.0, *)) {\
+[UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;\
+[UITableView appearance].estimatedRowHeight = 0;\
+[UITableView appearance].estimatedSectionFooterHeight = 0;\
+[UITableView appearance].estimatedSectionHeaderHeight = 0;\
+}\
+
+
 
 #endif /* JYMacros_h */

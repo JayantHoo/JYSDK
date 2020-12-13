@@ -1,9 +1,28 @@
 platform :ios, ‘9.0’ 
 inhibit_all_warnings!  
 
+source 'https://github.com/JayantHoo/SharePodspec.git'
+
+source 'https://github.com/JayantHoo/JYTestPodspec.git'
+
 target "JYSDKDemo" do
-
-pod 'WechatOpenSDK'
-pod 'Weibo_SDK', :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
-
+   
+    pod 'JYTestLib'	
+    pod 'ShareLib'
+    pod 'TestLib'
+    pod 'AFNetworking', '~> 3.2.1'              #网络请求
+    pod 'MJRefresh'                             #上拉下滑刷新
+    pod 'MJExtension'                           #json模型互转
+    pod 'IQKeyboardManager'                     #键盘管理
+    pod 'Masonry'                               #自动布局
+    pod 'SDWebImage'                            #图片加载缓存
+    pod 'SDCycleScrollView'                     #轮播图
+    pod 'ZYCornerRadius'                        #imageView圆角处理
+    pod 'DACircularProgress', '2.3.1'           #环形进度条
+    #pod 'ZFPlayer'                              #播放器
+#    pod 'FDFullscreenPopGesture'         , '1.1'#侧滑手势
+    pod 'KVOController'          , '1.2.0'      #FaceBook KVO（优雅的代替系统原生的KVO）
+    pod 'WechatOpenSDK'
+    pod 'Weibo_SDK', :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
+    
 end

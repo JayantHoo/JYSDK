@@ -95,7 +95,6 @@
         
         BaseResp *reqs = (BaseResp *)resp;
         if (reqs.errCode == 0) { //支付成功
-            
             if (self.payFinished) {
                 JYPayResponse *response = [JYPayResponse payResponseWithSucess:true errorString:nil];
                 self.payFinished(response);
@@ -195,7 +194,6 @@
             JYShareResponse *response = [JYShareResponse shareResponseWithSucess:(wxresp.errCode == 0) errorStr:wxresp.errStr];
             self.shareFinished(response);
         }
-        
     }
 }
 
@@ -258,6 +256,40 @@
     webReq.scene = scene;
     [WXApi sendReq:webReq];
 }
+
+
+- (void)weChatShareMiniProgramWithURL:(NSString *)url
+                                 path:(NSString *)path
+                             userName:(NSString *)userName
+                          description:(NSString *)description
+                            miniImage:(UIImage *)miniImage
+                           thumbImage:(UIImage *)thumbImage
+                                title:(NSString *)title
+                             finished:(void(^)(JYShareResponse *response))finished
+{
+    self.shareFinished = finished;
+    WXMiniProgramObject *object = [WXMiniProgramObject object];
+    object.webpageUrl = url;
+    object.userName = userName;
+    object.path = path;
+    UIImage *newImage = [UIImage jy_compressImage:miniImage toByte:6000];
+    object.hdImageData =  UIImageJPEGRepresentation(newImage,1.0);
+    object.withShareTicket = YES;
+    object.miniProgramType =  WXMiniProgramTypeRelease;
+    WXMediaMessage *message = [WXMediaMessage message];
+    message.title = title;
+    message.description = description;
+    [message setThumbImage:thumbImage];
+    message.mediaObject = object;
+    SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+    req.bText = NO;
+    req.message = message;
+    req.scene = WXSceneSession;  //目前只支持会话
+    [WXApi sendReq:req];
+}
+
+
+
 //音乐类型分享
 - (void)weChatShareMusicURL:(NSString *)musicUrl
                musicDataURL:(NSString *)musicDataUrl

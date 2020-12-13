@@ -6,10 +6,10 @@
 //  Copyright © 2018年 isenu. All rights reserved.
 //
 
-#import "JYHelper.h"
+#import "JYDefaultHelper.h"
 #import <WeiboSDK.h>
 
-@interface JYWBHelper : JYHelper
+@interface JYWBHelper : JYDefaultHelper
 
 //LSApplicationQueriesSchemes
 /**

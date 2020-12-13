@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204E63FD2264351600F29622 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E63FC2264351600F29622 /* JYSegmentView.m */; };
+		204E64042266FAE300F29622 /* JYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E64032266FAE300F29622 /* JYPageViewController.m */; };
+		20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075334F258660C800A5E607 /* JYBaseAlertView.m */; };
+		20753356258661E800A5E607 /* JYAlertSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753355258661E800A5E607 /* JYAlertSheet.m */; };
+		2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075335B2586642200A5E607 /* JYTableViewCell.m */; };
+		2075336E2586668500A5E607 /* UILabel+JYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075336D2586668500A5E607 /* UILabel+JYCategory.m */; };
+		207533772586674D00A5E607 /* UIView+JYBageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533762586674D00A5E607 /* UIView+JYBageView.m */; };
+		2075337D2586687D00A5E607 /* JYScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075337C2586687D00A5E607 /* JYScanNative.m */; };
+		2079992120E9CB7800C34D9A /* UITextField+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */; };
+		2079992420E9CC9200C34D9A /* NSString+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992320E9CC9200C34D9A /* NSString+JYExtension.m */; };
+		2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */; };
+		2079992A20E9DB3C00C34D9A /* UITableView+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992920E9DB3C00C34D9A /* UITableView+JYExtension.m */; };
+		2079992D20E9F89900C34D9A /* NSString+JYValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992C20E9F89900C34D9A /* NSString+JYValid.m */; };
+		2079993120E9FE7E00C34D9A /* JYControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079993020E9FE7E00C34D9A /* JYControllerHelper.m */; };
+		2079993420EA091600C34D9A /* JYLocalNotifationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079993320EA091600C34D9A /* JYLocalNotifationCenter.m */; };
+		2079993720EA0DAF00C34D9A /* NSDate+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079993620EA0DAF00C34D9A /* NSDate+JYExtension.m */; };
+		2079993A20EA0F3200C34D9A /* NSDateFormatter+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079993920EA0F3200C34D9A /* NSDateFormatter+JYExtension.m */; };
+		2079993D20EA103600C34D9A /* JYWebImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079993C20EA103600C34D9A /* JYWebImageTool.m */; };
+		2079994020EA175A00C34D9A /* UIImageView+JYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079993F20EA175A00C34D9A /* UIImageView+JYWebImage.m */; };
 		208CAA2120E1EFD600374358 /* JYWCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2020E1EFD600374358 /* JYWCHelper.m */; };
 		208CAA2420E1F26C00374358 /* JYTPHelperConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2320E1F26C00374358 /* JYTPHelperConfig.m */; };
 		208CAA2720E21AA900374358 /* JYQQHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA2620E21AA900374358 /* JYQQHelper.m */; };
@@ -25,7 +44,26 @@
 		208CAA4720E23E5E00374358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4620E23E5E00374358 /* Foundation.framework */; };
 		208CAA4920E23E6800374358 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4820E23E6700374358 /* CFNetwork.framework */; };
 		208CAA4B20E23E7100374358 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CAA4A20E23E7000374358 /* CoreMotion.framework */; };
-		208CAA4E20E3375200374358 /* JYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 208CAA4D20E3375200374358 /* JYHelper.m */; };
+		20A453472122E68900540EF1 /* JYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A453462122E68900540EF1 /* JYTableViewController.m */; };
+		20A4534A2123274000540EF1 /* JYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A453492123274000540EF1 /* JYWebViewController.m */; };
+		20D39E1B20E387320088F4BF /* JYDefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D39E1A20E387320088F4BF /* JYDefaultHelper.m */; };
+		20D39E1E20E391F60088F4BF /* UIFont+JYScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D39E1D20E391F60088F4BF /* UIFont+JYScale.m */; };
+		20D4AC4F20EC63E2006693CD /* UIImage+JYBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4AC4E20EC63E2006693CD /* UIImage+JYBlur.m */; };
+		20D4AC5220EC69DC006693CD /* UIView+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4AC5120EC69DC006693CD /* UIView+JYExtension.m */; };
+		20D4AC5520EC6ABF006693CD /* UIFont+JYExtenison.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4AC5420EC6ABF006693CD /* UIFont+JYExtenison.m */; };
+		20D4AC5920EC7E0C006693CD /* JYEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4AC5820EC7E0C006693CD /* JYEmptyDataView.m */; };
+		20D8A0EF2112A56A009DBE91 /* JYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8A0EE2112A56A009DBE91 /* JYModel.m */; };
+		20D99DE320E4BC8400F06BFE /* JYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DE220E4BC8400F06BFE /* JYBaseViewController.m */; };
+		20D99DE620E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DE420E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m */; };
+		20D99DEA20E4DA6700F06BFE /* JYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DE920E4DA6700F06BFE /* JYNavigationController.m */; };
+		20D99DED20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DEC20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m */; };
+		20D99DF420E4DCCA00F06BFE /* JYBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DF320E4DCCA00F06BFE /* JYBackButton.m */; };
+		20D99DF720E4E10800F06BFE /* UIColor+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DF620E4E10800F06BFE /* UIColor+JYExtension.m */; };
+		20E0783C21145BE8003D011E /* JYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0783B21145BE8003D011E /* JYTabBarController.m */; };
+		20E0783F21145C63003D011E /* JYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0783E21145C63003D011E /* JYTabBar.m */; };
+		20E0784E21146374003D011E /* JYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0784D21146374003D011E /* JYConstant.m */; };
+		20E7CA0421130CFA0085AD75 /* NSObject+JYSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CA0321130CFA0085AD75 /* NSObject+JYSafe.m */; };
+		20E7CA0721130FE20085AD75 /* JYSafeProtector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E7CA0621130FE20085AD75 /* JYSafeProtector.m */; };
 		77AAA55CED45EC385B87FCBB /* libPods-JYSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A23C5A2136C0CFC7F2AF6 /* libPods-JYSDKDemo.a */; };
 		9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */; };
 		9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */; };
@@ -66,6 +104,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204E63FB2264351600F29622 /* JYSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYSegmentView.h; sourceTree = "<group>"; };
+		204E63FC2264351600F29622 /* JYSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYSegmentView.m; sourceTree = "<group>"; };
+		204E64022266FAE300F29622 /* JYPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPageViewController.h; sourceTree = "<group>"; };
+		204E64032266FAE300F29622 /* JYPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPageViewController.m; sourceTree = "<group>"; };
+		2075334E258660C800A5E607 /* JYBaseAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseAlertView.h; sourceTree = "<group>"; };
+		2075334F258660C800A5E607 /* JYBaseAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseAlertView.m; sourceTree = "<group>"; };
+		20753354258661E800A5E607 /* JYAlertSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYAlertSheet.h; sourceTree = "<group>"; };
+		20753355258661E800A5E607 /* JYAlertSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYAlertSheet.m; sourceTree = "<group>"; };
+		2075335A2586642200A5E607 /* JYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTableViewCell.h; sourceTree = "<group>"; };
+		2075335B2586642200A5E607 /* JYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTableViewCell.m; sourceTree = "<group>"; };
+		2075336C2586668500A5E607 /* UILabel+JYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+JYCategory.h"; sourceTree = "<group>"; };
+		2075336D2586668500A5E607 /* UILabel+JYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JYCategory.m"; sourceTree = "<group>"; };
+		207533752586674C00A5E607 /* UIView+JYBageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JYBageView.h"; sourceTree = "<group>"; };
+		207533762586674D00A5E607 /* UIView+JYBageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYBageView.m"; sourceTree = "<group>"; };
+		2075337B2586687C00A5E607 /* JYScanNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYScanNative.h; sourceTree = "<group>"; };
+		2075337C2586687D00A5E607 /* JYScanNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYScanNative.m; sourceTree = "<group>"; };
+		2079991F20E9CB7800C34D9A /* UITextField+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JYExtension.h"; sourceTree = "<group>"; };
+		2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JYExtension.m"; sourceTree = "<group>"; };
+		2079992220E9CC9200C34D9A /* NSString+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYExtension.h"; sourceTree = "<group>"; };
+		2079992320E9CC9200C34D9A /* NSString+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYExtension.m"; sourceTree = "<group>"; };
+		2079992520E9CE5700C34D9A /* UITabBar+JYBage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+JYBage.h"; sourceTree = "<group>"; };
+		2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+JYBage.m"; sourceTree = "<group>"; };
+		2079992820E9DB3C00C34D9A /* UITableView+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+JYExtension.h"; sourceTree = "<group>"; };
+		2079992920E9DB3C00C34D9A /* UITableView+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JYExtension.m"; sourceTree = "<group>"; };
+		2079992B20E9F89900C34D9A /* NSString+JYValid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYValid.h"; sourceTree = "<group>"; };
+		2079992C20E9F89900C34D9A /* NSString+JYValid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYValid.m"; sourceTree = "<group>"; };
+		2079992F20E9FE7E00C34D9A /* JYControllerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYControllerHelper.h; sourceTree = "<group>"; };
+		2079993020E9FE7E00C34D9A /* JYControllerHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYControllerHelper.m; sourceTree = "<group>"; };
+		2079993220EA091600C34D9A /* JYLocalNotifationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYLocalNotifationCenter.h; sourceTree = "<group>"; };
+		2079993320EA091600C34D9A /* JYLocalNotifationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYLocalNotifationCenter.m; sourceTree = "<group>"; };
+		2079993520EA0DAF00C34D9A /* NSDate+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+JYExtension.h"; sourceTree = "<group>"; };
+		2079993620EA0DAF00C34D9A /* NSDate+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JYExtension.m"; sourceTree = "<group>"; };
+		2079993820EA0F3200C34D9A /* NSDateFormatter+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+JYExtension.h"; sourceTree = "<group>"; };
+		2079993920EA0F3200C34D9A /* NSDateFormatter+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+JYExtension.m"; sourceTree = "<group>"; };
+		2079993B20EA103600C34D9A /* JYWebImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWebImageTool.h; sourceTree = "<group>"; };
+		2079993C20EA103600C34D9A /* JYWebImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWebImageTool.m; sourceTree = "<group>"; };
+		2079993E20EA175A00C34D9A /* UIImageView+JYWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JYWebImage.h"; sourceTree = "<group>"; };
+		2079993F20EA175A00C34D9A /* UIImageView+JYWebImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JYWebImage.m"; sourceTree = "<group>"; };
 		208CAA1E20E1EAF200374358 /* JYMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYMacros.h; sourceTree = "<group>"; };
 		208CAA1F20E1EFD600374358 /* JYWCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWCHelper.h; sourceTree = "<group>"; };
 		208CAA2020E1EFD600374358 /* JYWCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWCHelper.m; sourceTree = "<group>"; };
@@ -88,8 +164,47 @@
 		208CAA4620E23E5E00374358 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		208CAA4820E23E6700374358 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		208CAA4A20E23E7000374358 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		208CAA4C20E3375200374358 /* JYHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYHelper.h; sourceTree = "<group>"; };
-		208CAA4D20E3375200374358 /* JYHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYHelper.m; sourceTree = "<group>"; };
+		20A453452122E68900540EF1 /* JYTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTableViewController.h; sourceTree = "<group>"; };
+		20A453462122E68900540EF1 /* JYTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTableViewController.m; sourceTree = "<group>"; };
+		20A453482123274000540EF1 /* JYWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYWebViewController.h; sourceTree = "<group>"; };
+		20A453492123274000540EF1 /* JYWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYWebViewController.m; sourceTree = "<group>"; };
+		20D39E1920E387320088F4BF /* JYDefaultHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYDefaultHelper.h; sourceTree = "<group>"; };
+		20D39E1A20E387320088F4BF /* JYDefaultHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYDefaultHelper.m; sourceTree = "<group>"; };
+		20D39E1C20E391F60088F4BF /* UIFont+JYScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+JYScale.h"; sourceTree = "<group>"; };
+		20D39E1D20E391F60088F4BF /* UIFont+JYScale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JYScale.m"; sourceTree = "<group>"; };
+		20D4AC4D20EC63E2006693CD /* UIImage+JYBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYBlur.h"; sourceTree = "<group>"; };
+		20D4AC4E20EC63E2006693CD /* UIImage+JYBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYBlur.m"; sourceTree = "<group>"; };
+		20D4AC5020EC69DC006693CD /* UIView+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYExtension.h"; sourceTree = "<group>"; };
+		20D4AC5120EC69DC006693CD /* UIView+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYExtension.m"; sourceTree = "<group>"; };
+		20D4AC5320EC6ABF006693CD /* UIFont+JYExtenison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+JYExtenison.h"; sourceTree = "<group>"; };
+		20D4AC5420EC6ABF006693CD /* UIFont+JYExtenison.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JYExtenison.m"; sourceTree = "<group>"; };
+		20D4AC5720EC7E0C006693CD /* JYEmptyDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYEmptyDataView.h; sourceTree = "<group>"; };
+		20D4AC5820EC7E0C006693CD /* JYEmptyDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYEmptyDataView.m; sourceTree = "<group>"; };
+		20D8A0ED2112A56A009DBE91 /* JYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYModel.h; sourceTree = "<group>"; };
+		20D8A0EE2112A56A009DBE91 /* JYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYModel.m; sourceTree = "<group>"; };
+		20D99DE120E4BC8400F06BFE /* JYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseViewController.h; sourceTree = "<group>"; };
+		20D99DE220E4BC8400F06BFE /* JYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseViewController.m; sourceTree = "<group>"; };
+		20D99DE420E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		20D99DE520E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		20D99DE720E4D58700F06BFE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		20D99DE820E4DA6700F06BFE /* JYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYNavigationController.h; sourceTree = "<group>"; };
+		20D99DE920E4DA6700F06BFE /* JYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYNavigationController.m; sourceTree = "<group>"; };
+		20D99DEB20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JYExtension.h"; sourceTree = "<group>"; };
+		20D99DEC20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JYExtension.m"; sourceTree = "<group>"; };
+		20D99DF220E4DCCA00F06BFE /* JYBackButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBackButton.h; sourceTree = "<group>"; };
+		20D99DF320E4DCCA00F06BFE /* JYBackButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBackButton.m; sourceTree = "<group>"; };
+		20D99DF520E4E10800F06BFE /* UIColor+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JYExtension.h"; sourceTree = "<group>"; };
+		20D99DF620E4E10800F06BFE /* UIColor+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JYExtension.m"; sourceTree = "<group>"; };
+		20E0783A21145BE8003D011E /* JYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTabBarController.h; sourceTree = "<group>"; };
+		20E0783B21145BE8003D011E /* JYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTabBarController.m; sourceTree = "<group>"; };
+		20E0783D21145C63003D011E /* JYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTabBar.h; sourceTree = "<group>"; };
+		20E0783E21145C63003D011E /* JYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTabBar.m; sourceTree = "<group>"; };
+		20E0784C21146374003D011E /* JYConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYConstant.h; sourceTree = "<group>"; };
+		20E0784D21146374003D011E /* JYConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYConstant.m; sourceTree = "<group>"; };
+		20E7CA0221130CFA0085AD75 /* NSObject+JYSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JYSafe.h"; sourceTree = "<group>"; };
+		20E7CA0321130CFA0085AD75 /* NSObject+JYSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JYSafe.m"; sourceTree = "<group>"; };
+		20E7CA0521130FE20085AD75 /* JYSafeProtector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYSafeProtector.h; sourceTree = "<group>"; };
+		20E7CA0621130FE20085AD75 /* JYSafeProtector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYSafeProtector.m; sourceTree = "<group>"; };
 		6C26A93908412CE85C5489E6 /* Pods-JYSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9D0E94232091D68A00BF3E43 /* NSString+JYDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYDevice.h"; sourceTree = "<group>"; };
 		9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JYDevice.m"; sourceTree = "<group>"; };
@@ -174,10 +289,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204E63FA226434E600F29622 /* JYSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				204E63FB2264351600F29622 /* JYSegmentView.h */,
+				204E63FC2264351600F29622 /* JYSegmentView.m */,
+			);
+			path = JYSegmentView;
+			sourceTree = "<group>";
+		};
+		204E64012266FAAE00F29622 /* JYPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				204E64022266FAE300F29622 /* JYPageViewController.h */,
+				204E64032266FAE300F29622 /* JYPageViewController.m */,
+			);
+			path = JYPageViewController;
+			sourceTree = "<group>";
+		};
+		20753360258665DB00A5E607 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20D99DE520E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.h */,
+				20D99DE420E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20753361258665E700A5E607 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				20D99DF520E4E10800F06BFE /* UIColor+JYExtension.h */,
+				20D99DF620E4E10800F06BFE /* UIColor+JYExtension.m */,
+				9D0E94232091D68A00BF3E43 /* NSString+JYDevice.h */,
+				9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */,
+				2079992B20E9F89900C34D9A /* NSString+JYValid.h */,
+				2079992C20E9F89900C34D9A /* NSString+JYValid.m */,
+				2079992220E9CC9200C34D9A /* NSString+JYExtension.h */,
+				2079992320E9CC9200C34D9A /* NSString+JYExtension.m */,
+				20D4AC4D20EC63E2006693CD /* UIImage+JYBlur.h */,
+				20D4AC4E20EC63E2006693CD /* UIImage+JYBlur.m */,
+				9D0E942C2091DEDE00BF3E43 /* UIImage+JYExtension.h */,
+				9D0E942D2091DEDE00BF3E43 /* UIImage+JYExtension.m */,
+				2079993520EA0DAF00C34D9A /* NSDate+JYExtension.h */,
+				2079993620EA0DAF00C34D9A /* NSDate+JYExtension.m */,
+				2079993820EA0F3200C34D9A /* NSDateFormatter+JYExtension.h */,
+				2079993920EA0F3200C34D9A /* NSDateFormatter+JYExtension.m */,
+				20D39E1C20E391F60088F4BF /* UIFont+JYScale.h */,
+				20D39E1D20E391F60088F4BF /* UIFont+JYScale.m */,
+				20D4AC5320EC6ABF006693CD /* UIFont+JYExtenison.h */,
+				20D4AC5420EC6ABF006693CD /* UIFont+JYExtenison.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		20753362258665F000A5E607 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20D99DEB20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.h */,
+				20D99DEC20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m */,
+				2079992520E9CE5700C34D9A /* UITabBar+JYBage.h */,
+				2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */,
+				2079992820E9DB3C00C34D9A /* UITableView+JYExtension.h */,
+				2079992920E9DB3C00C34D9A /* UITableView+JYExtension.m */,
+				2079993E20EA175A00C34D9A /* UIImageView+JYWebImage.h */,
+				2079993F20EA175A00C34D9A /* UIImageView+JYWebImage.m */,
+				9D0E94292091D92E00BF3E43 /* UIView+JYRect.h */,
+				9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */,
+				207533752586674C00A5E607 /* UIView+JYBageView.h */,
+				207533762586674D00A5E607 /* UIView+JYBageView.m */,
+				20D4AC5020EC69DC006693CD /* UIView+JYExtension.h */,
+				20D4AC5120EC69DC006693CD /* UIView+JYExtension.m */,
+				9D0E94262091D84A00BF3E43 /* UIButton+JYOptions.h */,
+				9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */,
+				2079991F20E9CB7800C34D9A /* UITextField+JYExtension.h */,
+				2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */,
+				2075336C2586668500A5E607 /* UILabel+JYCategory.h */,
+				2075336D2586668500A5E607 /* UILabel+JYCategory.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2079992E20E9FDF100C34D9A /* JYUtil */ = {
+			isa = PBXGroup;
+			children = (
+				2079992F20E9FE7E00C34D9A /* JYControllerHelper.h */,
+				2079993020E9FE7E00C34D9A /* JYControllerHelper.m */,
+				2079993B20EA103600C34D9A /* JYWebImageTool.h */,
+				2079993C20EA103600C34D9A /* JYWebImageTool.m */,
+				2079993220EA091600C34D9A /* JYLocalNotifationCenter.h */,
+				2079993320EA091600C34D9A /* JYLocalNotifationCenter.m */,
+				2075337B2586687C00A5E607 /* JYScanNative.h */,
+				2075337C2586687D00A5E607 /* JYScanNative.m */,
+			);
+			path = JYUtil;
+			sourceTree = "<group>";
+		};
 		208CAA1C20E1EAB100374358 /* JYConfig */ = {
 			isa = PBXGroup;
 			children = (
 				208CAA1E20E1EAF200374358 /* JYMacros.h */,
+				20E0784C21146374003D011E /* JYConstant.h */,
+				20E0784D21146374003D011E /* JYConstant.m */,
+				20D99DE720E4D58700F06BFE /* PrefixHeader.pch */,
 			);
 			path = JYConfig;
 			sourceTree = "<group>";
@@ -201,17 +415,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		20D4AC5620EC7DEA006693CD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				20D4AC5720EC7E0C006693CD /* JYEmptyDataView.h */,
+				20D4AC5820EC7E0C006693CD /* JYEmptyDataView.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		20D99DE020E4BC5800F06BFE /* JYBase */ = {
+			isa = PBXGroup;
+			children = (
+				20D99DF120E4DC8400F06BFE /* Models */,
+				20D99DF020E4DC7D00F06BFE /* Views */,
+				20D99DEF20E4DC6E00F06BFE /* ViewControllers */,
+			);
+			path = JYBase;
+			sourceTree = "<group>";
+		};
+		20D99DEF20E4DC6E00F06BFE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				20D99DE120E4BC8400F06BFE /* JYBaseViewController.h */,
+				20D99DE220E4BC8400F06BFE /* JYBaseViewController.m */,
+				20A453452122E68900540EF1 /* JYTableViewController.h */,
+				20A453462122E68900540EF1 /* JYTableViewController.m */,
+				20D99DE820E4DA6700F06BFE /* JYNavigationController.h */,
+				20D99DE920E4DA6700F06BFE /* JYNavigationController.m */,
+				20E0783A21145BE8003D011E /* JYTabBarController.h */,
+				20E0783B21145BE8003D011E /* JYTabBarController.m */,
+				20A453482123274000540EF1 /* JYWebViewController.h */,
+				20A453492123274000540EF1 /* JYWebViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		20D99DF020E4DC7D00F06BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20D99DF220E4DCCA00F06BFE /* JYBackButton.h */,
+				20D99DF320E4DCCA00F06BFE /* JYBackButton.m */,
+				20E0783D21145C63003D011E /* JYTabBar.h */,
+				20E0783E21145C63003D011E /* JYTabBar.m */,
+				2075335A2586642200A5E607 /* JYTableViewCell.h */,
+				2075335B2586642200A5E607 /* JYTableViewCell.m */,
+				2075334E258660C800A5E607 /* JYBaseAlertView.h */,
+				2075334F258660C800A5E607 /* JYBaseAlertView.m */,
+				20753354258661E800A5E607 /* JYAlertSheet.h */,
+				20753355258661E800A5E607 /* JYAlertSheet.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20D99DF120E4DC8400F06BFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20D8A0ED2112A56A009DBE91 /* JYModel.h */,
+				20D8A0EE2112A56A009DBE91 /* JYModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9D0E94222091D48E00BF3E43 /* JKCategorys */ = {
 			isa = PBXGroup;
 			children = (
-				9D0E94232091D68A00BF3E43 /* NSString+JYDevice.h */,
-				9D0E94242091D68A00BF3E43 /* NSString+JYDevice.m */,
-				9D0E94262091D84A00BF3E43 /* UIButton+JYOptions.h */,
-				9D0E94272091D84A00BF3E43 /* UIButton+JYOptions.m */,
-				9D0E94292091D92E00BF3E43 /* UIView+JYRect.h */,
-				9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */,
-				9D0E942C2091DEDE00BF3E43 /* UIImage+JYExtension.h */,
-				9D0E942D2091DEDE00BF3E43 /* UIImage+JYExtension.m */,
+				20753362258665F000A5E607 /* View */,
+				20753361258665E700A5E607 /* Object */,
+				20753360258665DB00A5E607 /* Controller */,
 			);
 			path = JKCategorys;
 			sourceTree = "<group>";
@@ -219,6 +490,10 @@
 		9D64665C20905076002128F1 /* JYSafe */ = {
 			isa = PBXGroup;
 			children = (
+				20E7CA0221130CFA0085AD75 /* NSObject+JYSafe.h */,
+				20E7CA0321130CFA0085AD75 /* NSObject+JYSafe.m */,
+				20E7CA0521130FE20085AD75 /* JYSafeProtector.h */,
+				20E7CA0621130FE20085AD75 /* JYSafeProtector.m */,
 				9D64665D20905094002128F1 /* NSDictionary+JYSafe.h */,
 				9D64665E20905094002128F1 /* NSDictionary+JYSafe.m */,
 				9D64666320905143002128F1 /* NSArray+JYSafe.h */,
@@ -234,10 +509,15 @@
 		9D8AC3DC206B9B3900BD6FB5 = {
 			isa = PBXGroup;
 			children = (
+				20D4AC5620EC7DEA006693CD /* Other */,
+				2079992E20E9FDF100C34D9A /* JYUtil */,
 				208CAA1C20E1EAB100374358 /* JYConfig */,
 				9D0E94222091D48E00BF3E43 /* JKCategorys */,
 				9D64665C20905076002128F1 /* JYSafe */,
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
+				20D99DE020E4BC5800F06BFE /* JYBase */,
+				204E64012266FAAE00F29622 /* JYPageViewController */,
+				204E63FA226434E600F29622 /* JYSegmentView */,
 				9DDD1DD6206C996B00D35594 /* JYTPHelper */,
 				9D8AC3E7206B9B3A00BD6FB5 /* JYSDKDemo */,
 				9D8AC400206B9B3A00BD6FB5 /* JYSDKDemoTests */,
@@ -296,8 +576,8 @@
 			children = (
 				9DDD1DF0206CEE9A00D35594 /* JYTPHelper.h */,
 				9DDD1DF1206CEE9A00D35594 /* JYTPHelper.m */,
-				208CAA4C20E3375200374358 /* JYHelper.h */,
-				208CAA4D20E3375200374358 /* JYHelper.m */,
+				20D39E1920E387320088F4BF /* JYDefaultHelper.h */,
+				20D39E1A20E387320088F4BF /* JYDefaultHelper.m */,
 				208CAA1F20E1EFD600374358 /* JYWCHelper.h */,
 				208CAA2020E1EFD600374358 /* JYWCHelper.m */,
 				208CAA2520E21AA900374358 /* JYQQHelper.h */,
@@ -506,16 +786,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/Weibo_SDK/libWeiboSDK/WeiboSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JYSDKDemo/Pods-JYSDKDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -525,25 +809,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2079994020EA175A00C34D9A /* UIImageView+JYWebImage.m in Sources */,
+				2075336E2586668500A5E607 /* UILabel+JYCategory.m in Sources */,
 				9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */,
+				20D8A0EF2112A56A009DBE91 /* JYModel.m in Sources */,
+				20D39E1B20E387320088F4BF /* JYDefaultHelper.m in Sources */,
+				20A453472122E68900540EF1 /* JYTableViewController.m in Sources */,
+				20E0784E21146374003D011E /* JYConstant.m in Sources */,
+				2079993720EA0DAF00C34D9A /* NSDate+JYExtension.m in Sources */,
+				20E7CA0421130CFA0085AD75 /* NSObject+JYSafe.m in Sources */,
 				9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */,
+				2079992D20E9F89900C34D9A /* NSString+JYValid.m in Sources */,
+				20E7CA0721130FE20085AD75 /* JYSafeProtector.m in Sources */,
+				2079993120E9FE7E00C34D9A /* JYControllerHelper.m in Sources */,
 				9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */,
+				20D4AC4F20EC63E2006693CD /* UIImage+JYBlur.m in Sources */,
 				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
+				207533772586674D00A5E607 /* UIView+JYBageView.m in Sources */,
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
+				2079992A20E9DB3C00C34D9A /* UITableView+JYExtension.m in Sources */,
 				9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */,
+				2079993420EA091600C34D9A /* JYLocalNotifationCenter.m in Sources */,
 				9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */,
 				9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */,
-				208CAA4E20E3375200374358 /* JYHelper.m in Sources */,
 				9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */,
 				208CAA2120E1EFD600374358 /* JYWCHelper.m in Sources */,
+				20D99DED20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m in Sources */,
+				2079992420E9CC9200C34D9A /* NSString+JYExtension.m in Sources */,
 				208CAA2D20E22F7600374358 /* JYWBHelper.m in Sources */,
+				20D99DF420E4DCCA00F06BFE /* JYBackButton.m in Sources */,
+				2079992120E9CB7800C34D9A /* UITextField+JYExtension.m in Sources */,
+				20E0783C21145BE8003D011E /* JYTabBarController.m in Sources */,
 				9D8AC3ED206B9B3A00BD6FB5 /* ViewController.m in Sources */,
 				9DDD1DF2206CEE9A00D35594 /* JYTPHelper.m in Sources */,
 				208CAA3020E2308E00374358 /* JYAliPayHelper.m in Sources */,
+				20D99DF720E4E10800F06BFE /* UIColor+JYExtension.m in Sources */,
+				20E0783F21145C63003D011E /* JYTabBar.m in Sources */,
+				20D99DE620E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				20753356258661E800A5E607 /* JYAlertSheet.m in Sources */,
+				2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */,
 				208CAA2420E1F26C00374358 /* JYTPHelperConfig.m in Sources */,
+				2079993D20EA103600C34D9A /* JYWebImageTool.m in Sources */,
+				20D99DE320E4BC8400F06BFE /* JYBaseViewController.m in Sources */,
+				20D99DEA20E4DA6700F06BFE /* JYNavigationController.m in Sources */,
+				20D4AC5920EC7E0C006693CD /* JYEmptyDataView.m in Sources */,
 				9D8AC3F8206B9B3A00BD6FB5 /* main.m in Sources */,
+				20D39E1E20E391F60088F4BF /* UIFont+JYScale.m in Sources */,
+				20D4AC5220EC69DC006693CD /* UIView+JYExtension.m in Sources */,
+				204E64042266FAE300F29622 /* JYPageViewController.m in Sources */,
+				204E63FD2264351600F29622 /* JYSegmentView.m in Sources */,
 				9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */,
 				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
+				2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */,
+				2075337D2586687D00A5E607 /* JYScanNative.m in Sources */,
+				20A4534A2123274000540EF1 /* JYWebViewController.m in Sources */,
+				2079993A20EA0F3200C34D9A /* NSDateFormatter+JYExtension.m in Sources */,
+				20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */,
+				20D4AC5520EC6ABF006693CD /* UIFont+JYExtenison.m in Sources */,
 				208CAA2720E21AA900374358 /* JYQQHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,19 +1023,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 636CQ24LU3;
+				DEVELOPMENT_TEAM = 5375HS528S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ThirdParty/AliPay",
 					"$(PROJECT_DIR)/ThirdParty/QQ",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/JYConfig/PrefixHeader.pch";
 				INFOPLIST_FILE = JYSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ThirdParty/libWeiboSDK",
-					"$(PROJECT_DIR)/ThirdParty/WeChat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jayant.JYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -726,19 +1048,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 636CQ24LU3;
+				DEVELOPMENT_TEAM = 5375HS528S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ThirdParty/AliPay",
 					"$(PROJECT_DIR)/ThirdParty/QQ",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/JYConfig/PrefixHeader.pch";
 				INFOPLIST_FILE = JYSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ThirdParty/libWeiboSDK",
-					"$(PROJECT_DIR)/ThirdParty/WeChat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jayant.JYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

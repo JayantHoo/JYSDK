@@ -6,9 +6,9 @@
 //  Copyright © 2018年 isenu. All rights reserved.
 //  //支付宝集成步骤：https://docs.open.alipay.com/204/105295/
 
-#import "JYHelper.h"
+#import "JYDefaultHelper.h"
 
-@interface JYAliPayHelper : JYHelper
+@interface JYAliPayHelper : JYDefaultHelper
 
 //LSApplicationQueriesSchemes
 /**

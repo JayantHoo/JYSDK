@@ -6,7 +6,7 @@
 //  Copyright © 2018年 isenu. All rights reserved.
 //
 
-#import "JYHelper.h"
+#import "JYDefaultHelper.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 #import <TencentOpenAPI/QQApiInterface.h>
 
@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, QQShareScene) {
   <string>mqzoneopensdk</string>
 */
 
-@interface JYQQHelper : JYHelper
+@interface JYQQHelper : JYDefaultHelper
 
 //注册QQ
 + (void)registerQQApp:(NSString *)qqAppId secret:(NSString *)qqSecret;
