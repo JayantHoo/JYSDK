@@ -15,6 +15,9 @@
 		2075336E2586668500A5E607 /* UILabel+JYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075336D2586668500A5E607 /* UILabel+JYCategory.m */; };
 		207533772586674D00A5E607 /* UIView+JYBageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533762586674D00A5E607 /* UIView+JYBageView.m */; };
 		2075337D2586687D00A5E607 /* JYScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075337C2586687D00A5E607 /* JYScanNative.m */; };
+		2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753385258A615500A5E607 /* UIView+Snapshot.m */; };
+		2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753388258A615500A5E607 /* UIViewController+PureTransition.m */; };
+		2075338D258A615500A5E607 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20753389258A615500A5E607 /* Info.plist */; };
 		2079992120E9CB7800C34D9A /* UITextField+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */; };
 		2079992420E9CC9200C34D9A /* NSString+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992320E9CC9200C34D9A /* NSString+JYExtension.m */; };
 		2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */; };
@@ -120,6 +123,12 @@
 		207533762586674D00A5E607 /* UIView+JYBageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYBageView.m"; sourceTree = "<group>"; };
 		2075337B2586687C00A5E607 /* JYScanNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYScanNative.h; sourceTree = "<group>"; };
 		2075337C2586687D00A5E607 /* JYScanNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYScanNative.m; sourceTree = "<group>"; };
+		20753385258A615500A5E607 /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
+		20753386258A615500A5E607 /* UIViewController+PureTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PureTransition.h"; sourceTree = "<group>"; };
+		20753387258A615500A5E607 /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
+		20753388258A615500A5E607 /* UIViewController+PureTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PureTransition.m"; sourceTree = "<group>"; };
+		20753389258A615500A5E607 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2075338A258A615500A5E607 /* YRNavigationBarPure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRNavigationBarPure.h; sourceTree = "<group>"; };
 		2079991F20E9CB7800C34D9A /* UITextField+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JYExtension.h"; sourceTree = "<group>"; };
 		2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JYExtension.m"; sourceTree = "<group>"; };
 		2079992220E9CC9200C34D9A /* NSString+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYExtension.h"; sourceTree = "<group>"; };
@@ -370,6 +379,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		20753384258A615500A5E607 /* YRNavigationBarPure */ = {
+			isa = PBXGroup;
+			children = (
+				20753385258A615500A5E607 /* UIView+Snapshot.m */,
+				20753386258A615500A5E607 /* UIViewController+PureTransition.h */,
+				20753387258A615500A5E607 /* UIView+Snapshot.h */,
+				20753388258A615500A5E607 /* UIViewController+PureTransition.m */,
+				20753389258A615500A5E607 /* Info.plist */,
+				2075338A258A615500A5E607 /* YRNavigationBarPure.h */,
+			);
+			path = YRNavigationBarPure;
+			sourceTree = "<group>";
+		};
 		2079992E20E9FDF100C34D9A /* JYUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +539,7 @@
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
 				20D99DE020E4BC5800F06BFE /* JYBase */,
 				204E64012266FAAE00F29622 /* JYPageViewController */,
+				20753384258A615500A5E607 /* YRNavigationBarPure */,
 				204E63FA226434E600F29622 /* JYSegmentView */,
 				9DDD1DD6206C996B00D35594 /* JYTPHelper */,
 				9D8AC3E7206B9B3A00BD6FB5 /* JYSDKDemo */,
@@ -739,6 +762,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2075338D258A615500A5E607 /* Info.plist in Resources */,
 				9D8AC3F5206B9B3A00BD6FB5 /* LaunchScreen.storyboard in Resources */,
 				9D8AC3F2206B9B3A00BD6FB5 /* Assets.xcassets in Resources */,
 				9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */,
@@ -810,11 +834,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2079994020EA175A00C34D9A /* UIImageView+JYWebImage.m in Sources */,
+				2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */,
 				2075336E2586668500A5E607 /* UILabel+JYCategory.m in Sources */,
 				9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */,
 				20D8A0EF2112A56A009DBE91 /* JYModel.m in Sources */,
 				20D39E1B20E387320088F4BF /* JYDefaultHelper.m in Sources */,
 				20A453472122E68900540EF1 /* JYTableViewController.m in Sources */,
+				2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */,
 				20E0784E21146374003D011E /* JYConstant.m in Sources */,
 				2079993720EA0DAF00C34D9A /* NSDate+JYExtension.m in Sources */,
 				20E7CA0421130CFA0085AD75 /* NSObject+JYSafe.m in Sources */,
