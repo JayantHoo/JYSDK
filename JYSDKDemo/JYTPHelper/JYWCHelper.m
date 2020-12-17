@@ -257,7 +257,7 @@
     [WXApi sendReq:webReq];
 }
 
-
+//分享小程序
 - (void)weChatShareMiniProgramWithURL:(NSString *)url
                                  path:(NSString *)path
                              userName:(NSString *)userName
