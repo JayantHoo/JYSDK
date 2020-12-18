@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */; };
 		204E63FD2264351600F29622 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E63FC2264351600F29622 /* JYSegmentView.m */; };
 		204E64042266FAE300F29622 /* JYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E64032266FAE300F29622 /* JYPageViewController.m */; };
 		20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075334F258660C800A5E607 /* JYBaseAlertView.m */; };
@@ -17,7 +18,6 @@
 		2075337D2586687D00A5E607 /* JYScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075337C2586687D00A5E607 /* JYScanNative.m */; };
 		2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753385258A615500A5E607 /* UIView+Snapshot.m */; };
 		2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753388258A615500A5E607 /* UIViewController+PureTransition.m */; };
-		2075338D258A615500A5E607 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20753389258A615500A5E607 /* Info.plist */; };
 		2079992120E9CB7800C34D9A /* UITextField+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */; };
 		2079992420E9CC9200C34D9A /* NSString+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992320E9CC9200C34D9A /* NSString+JYExtension.m */; };
 		2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */; };
@@ -107,6 +107,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20408EF7258CE28B00CEEDBC /* UITextView+JYPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JYPlaceholder.h"; sourceTree = "<group>"; };
+		20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JYPlaceholder.m"; sourceTree = "<group>"; };
 		204E63FB2264351600F29622 /* JYSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYSegmentView.h; sourceTree = "<group>"; };
 		204E63FC2264351600F29622 /* JYSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYSegmentView.m; sourceTree = "<group>"; };
 		204E64022266FAE300F29622 /* JYPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPageViewController.h; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 		20753386258A615500A5E607 /* UIViewController+PureTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PureTransition.h"; sourceTree = "<group>"; };
 		20753387258A615500A5E607 /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
 		20753388258A615500A5E607 /* UIViewController+PureTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PureTransition.m"; sourceTree = "<group>"; };
-		20753389258A615500A5E607 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2075338A258A615500A5E607 /* YRNavigationBarPure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRNavigationBarPure.h; sourceTree = "<group>"; };
 		2079991F20E9CB7800C34D9A /* UITextField+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JYExtension.h"; sourceTree = "<group>"; };
 		2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JYExtension.m"; sourceTree = "<group>"; };
@@ -363,6 +364,8 @@
 				2079992920E9DB3C00C34D9A /* UITableView+JYExtension.m */,
 				2079993E20EA175A00C34D9A /* UIImageView+JYWebImage.h */,
 				2079993F20EA175A00C34D9A /* UIImageView+JYWebImage.m */,
+				20408EF7258CE28B00CEEDBC /* UITextView+JYPlaceholder.h */,
+				20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */,
 				9D0E94292091D92E00BF3E43 /* UIView+JYRect.h */,
 				9D0E942A2091D92E00BF3E43 /* UIView+JYRect.m */,
 				207533752586674C00A5E607 /* UIView+JYBageView.h */,
@@ -382,11 +385,10 @@
 		20753384258A615500A5E607 /* YRNavigationBarPure */ = {
 			isa = PBXGroup;
 			children = (
+				20753387258A615500A5E607 /* UIView+Snapshot.h */,
 				20753385258A615500A5E607 /* UIView+Snapshot.m */,
 				20753386258A615500A5E607 /* UIViewController+PureTransition.h */,
-				20753387258A615500A5E607 /* UIView+Snapshot.h */,
 				20753388258A615500A5E607 /* UIViewController+PureTransition.m */,
-				20753389258A615500A5E607 /* Info.plist */,
 				2075338A258A615500A5E607 /* YRNavigationBarPure.h */,
 			);
 			path = YRNavigationBarPure;
@@ -762,7 +764,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2075338D258A615500A5E607 /* Info.plist in Resources */,
 				9D8AC3F5206B9B3A00BD6FB5 /* LaunchScreen.storyboard in Resources */,
 				9D8AC3F2206B9B3A00BD6FB5 /* Assets.xcassets in Resources */,
 				9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */,
@@ -835,6 +836,7 @@
 			files = (
 				2079994020EA175A00C34D9A /* UIImageView+JYWebImage.m in Sources */,
 				2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */,
+				20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */,
 				2075336E2586668500A5E607 /* UILabel+JYCategory.m in Sources */,
 				9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */,
 				20D8A0EF2112A56A009DBE91 /* JYModel.m in Sources */,
