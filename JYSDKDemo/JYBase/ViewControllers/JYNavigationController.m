@@ -82,8 +82,8 @@
     [appearance setTintColor:[UIColor whiteColor]];
     // 设置导航栏的背景渲染色
     // 设置导航栏的背景渲染色
-    CGFloat rgb = 0.1;
-    [appearance setBarTintColor:[UIColor colorWithRed:rgb green:rgb blue:rgb alpha:0.65]];
+//    CGFloat rgb = 0.1;
+//    [appearance setBarTintColor:[UIColor colorWithRed:rgb green:rgb blue:rgb alpha:0.65]];
     // 设置导航栏的背景渲染色或背景图片
     //    [appearance setBackgroundImage:[UIImage imageNamed:@"NavBackGround"] forBarMetrics:UIBarMetricsDefault];
     // 设置文字属性
@@ -170,7 +170,7 @@
         [viewController.navigationItem setHidesBackButton:YES];
         
         // 4.这里可以设置导航栏的左右按钮 统一管理方法
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem jy_backItemWithTitle:@"返回" imageName:@"barbuttonicon_back_15x30" target:self action:@selector(_backItemDidClicked)];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem jy_backItemWithTitle:@"返回" imageName:nil target:self action:@selector(_backItemDidClicked)];
     }
     
     // push

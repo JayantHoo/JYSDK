@@ -18,6 +18,7 @@
 		2075337D2586687D00A5E607 /* JYScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075337C2586687D00A5E607 /* JYScanNative.m */; };
 		2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753385258A615500A5E607 /* UIView+Snapshot.m */; };
 		2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753388258A615500A5E607 /* UIViewController+PureTransition.m */; };
+		207533A6258F3D9100A5E607 /* JYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533A5258F3D9100A5E607 /* JYTestViewController.m */; };
 		2079992120E9CB7800C34D9A /* UITextField+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */; };
 		2079992420E9CC9200C34D9A /* NSString+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992320E9CC9200C34D9A /* NSString+JYExtension.m */; };
 		2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */; };
@@ -57,7 +58,6 @@
 		20D4AC5920EC7E0C006693CD /* JYEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4AC5820EC7E0C006693CD /* JYEmptyDataView.m */; };
 		20D8A0EF2112A56A009DBE91 /* JYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8A0EE2112A56A009DBE91 /* JYModel.m */; };
 		20D99DE320E4BC8400F06BFE /* JYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DE220E4BC8400F06BFE /* JYBaseViewController.m */; };
-		20D99DE620E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DE420E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m */; };
 		20D99DEA20E4DA6700F06BFE /* JYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DE920E4DA6700F06BFE /* JYNavigationController.m */; };
 		20D99DED20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DEC20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m */; };
 		20D99DF420E4DCCA00F06BFE /* JYBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D99DF320E4DCCA00F06BFE /* JYBackButton.m */; };
@@ -130,6 +130,8 @@
 		20753387258A615500A5E607 /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
 		20753388258A615500A5E607 /* UIViewController+PureTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PureTransition.m"; sourceTree = "<group>"; };
 		2075338A258A615500A5E607 /* YRNavigationBarPure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRNavigationBarPure.h; sourceTree = "<group>"; };
+		207533A4258F3D9100A5E607 /* JYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTestViewController.h; sourceTree = "<group>"; };
+		207533A5258F3D9100A5E607 /* JYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTestViewController.m; sourceTree = "<group>"; };
 		2079991F20E9CB7800C34D9A /* UITextField+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JYExtension.h"; sourceTree = "<group>"; };
 		2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JYExtension.m"; sourceTree = "<group>"; };
 		2079992220E9CC9200C34D9A /* NSString+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYExtension.h"; sourceTree = "<group>"; };
@@ -194,8 +196,6 @@
 		20D8A0EE2112A56A009DBE91 /* JYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYModel.m; sourceTree = "<group>"; };
 		20D99DE120E4BC8400F06BFE /* JYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseViewController.h; sourceTree = "<group>"; };
 		20D99DE220E4BC8400F06BFE /* JYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseViewController.m; sourceTree = "<group>"; };
-		20D99DE420E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		20D99DE520E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		20D99DE720E4D58700F06BFE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		20D99DE820E4DA6700F06BFE /* JYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYNavigationController.h; sourceTree = "<group>"; };
 		20D99DE920E4DA6700F06BFE /* JYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYNavigationController.m; sourceTree = "<group>"; };
@@ -320,8 +320,7 @@
 		20753360258665DB00A5E607 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				20D99DE520E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.h */,
-				20D99DE420E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m */,
+				20753384258A615500A5E607 /* YRNavigationBarPure */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -541,7 +540,6 @@
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
 				20D99DE020E4BC5800F06BFE /* JYBase */,
 				204E64012266FAAE00F29622 /* JYPageViewController */,
-				20753384258A615500A5E607 /* YRNavigationBarPure */,
 				204E63FA226434E600F29622 /* JYSegmentView */,
 				9DDD1DD6206C996B00D35594 /* JYTPHelper */,
 				9D8AC3E7206B9B3A00BD6FB5 /* JYSDKDemo */,
@@ -570,6 +568,8 @@
 				9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */,
 				9D8AC3EB206B9B3A00BD6FB5 /* ViewController.h */,
 				9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */,
+				207533A4258F3D9100A5E607 /* JYTestViewController.h */,
+				207533A5258F3D9100A5E607 /* JYTestViewController.m */,
 				9D8AC3F1206B9B3A00BD6FB5 /* Assets.xcassets */,
 				9D8AC3F3206B9B3A00BD6FB5 /* LaunchScreen.storyboard */,
 				9D8AC3F6206B9B3A00BD6FB5 /* Info.plist */,
@@ -853,6 +853,7 @@
 				9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */,
 				20D4AC4F20EC63E2006693CD /* UIImage+JYBlur.m in Sources */,
 				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
+				207533A6258F3D9100A5E607 /* JYTestViewController.m in Sources */,
 				207533772586674D00A5E607 /* UIView+JYBageView.m in Sources */,
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
 				2079992A20E9DB3C00C34D9A /* UITableView+JYExtension.m in Sources */,
@@ -873,7 +874,6 @@
 				208CAA3020E2308E00374358 /* JYAliPayHelper.m in Sources */,
 				20D99DF720E4E10800F06BFE /* UIColor+JYExtension.m in Sources */,
 				20E0783F21145C63003D011E /* JYTabBar.m in Sources */,
-				20D99DE620E4C33100F06BFE /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				20753356258661E800A5E607 /* JYAlertSheet.m in Sources */,
 				2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */,
 				208CAA2420E1F26C00374358 /* JYTPHelperConfig.m in Sources */,
