@@ -19,6 +19,9 @@
 		2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753385258A615500A5E607 /* UIView+Snapshot.m */; };
 		2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753388258A615500A5E607 /* UIViewController+PureTransition.m */; };
 		207533A6258F3D9100A5E607 /* JYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533A5258F3D9100A5E607 /* JYTestViewController.m */; };
+		207533B3258F474700A5E607 /* JYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533B2258F474700A5E607 /* JYBaseViewModel.m */; };
+		207533BC258F484200A5E607 /* JYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533BB258F484200A5E607 /* JYCollectionViewCell.m */; };
+		207533C5258F4A8C00A5E607 /* JYStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207533C4258F4A8C00A5E607 /* JYStackViewController.m */; };
 		2079992120E9CB7800C34D9A /* UITextField+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */; };
 		2079992420E9CC9200C34D9A /* NSString+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992320E9CC9200C34D9A /* NSString+JYExtension.m */; };
 		2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2079992620E9CE5700C34D9A /* UITabBar+JYBage.m */; };
@@ -132,6 +135,12 @@
 		2075338A258A615500A5E607 /* YRNavigationBarPure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRNavigationBarPure.h; sourceTree = "<group>"; };
 		207533A4258F3D9100A5E607 /* JYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTestViewController.h; sourceTree = "<group>"; };
 		207533A5258F3D9100A5E607 /* JYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTestViewController.m; sourceTree = "<group>"; };
+		207533B1258F474700A5E607 /* JYBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseViewModel.h; sourceTree = "<group>"; };
+		207533B2258F474700A5E607 /* JYBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseViewModel.m; sourceTree = "<group>"; };
+		207533BA258F484200A5E607 /* JYCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYCollectionViewCell.h; sourceTree = "<group>"; };
+		207533BB258F484200A5E607 /* JYCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCollectionViewCell.m; sourceTree = "<group>"; };
+		207533C3258F4A8C00A5E607 /* JYStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYStackViewController.h; sourceTree = "<group>"; };
+		207533C4258F4A8C00A5E607 /* JYStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYStackViewController.m; sourceTree = "<group>"; };
 		2079991F20E9CB7800C34D9A /* UITextField+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JYExtension.h"; sourceTree = "<group>"; };
 		2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JYExtension.m"; sourceTree = "<group>"; };
 		2079992220E9CC9200C34D9A /* NSString+JYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JYExtension.h"; sourceTree = "<group>"; };
@@ -393,6 +402,15 @@
 			path = YRNavigationBarPure;
 			sourceTree = "<group>";
 		};
+		207533B0258F470200A5E607 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				207533B1258F474700A5E607 /* JYBaseViewModel.h */,
+				207533B2258F474700A5E607 /* JYBaseViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2079992E20E9FDF100C34D9A /* JYUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +468,7 @@
 		20D99DE020E4BC5800F06BFE /* JYBase */ = {
 			isa = PBXGroup;
 			children = (
+				207533B0258F470200A5E607 /* ViewModel */,
 				20D99DF120E4DC8400F06BFE /* Models */,
 				20D99DF020E4DC7D00F06BFE /* Views */,
 				20D99DEF20E4DC6E00F06BFE /* ViewControllers */,
@@ -470,6 +489,8 @@
 				20E0783B21145BE8003D011E /* JYTabBarController.m */,
 				20A453482123274000540EF1 /* JYWebViewController.h */,
 				20A453492123274000540EF1 /* JYWebViewController.m */,
+				207533C3258F4A8C00A5E607 /* JYStackViewController.h */,
+				207533C4258F4A8C00A5E607 /* JYStackViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -483,6 +504,8 @@
 				20E0783E21145C63003D011E /* JYTabBar.m */,
 				2075335A2586642200A5E607 /* JYTableViewCell.h */,
 				2075335B2586642200A5E607 /* JYTableViewCell.m */,
+				207533BA258F484200A5E607 /* JYCollectionViewCell.h */,
+				207533BB258F484200A5E607 /* JYCollectionViewCell.m */,
 				2075334E258660C800A5E607 /* JYBaseAlertView.h */,
 				2075334F258660C800A5E607 /* JYBaseAlertView.m */,
 				20753354258661E800A5E607 /* JYAlertSheet.h */,
@@ -500,14 +523,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		9D0E94222091D48E00BF3E43 /* JKCategorys */ = {
+		9D0E94222091D48E00BF3E43 /* JYCategorys */ = {
 			isa = PBXGroup;
 			children = (
+				9D64665C20905076002128F1 /* JYSafe */,
 				20753362258665F000A5E607 /* View */,
 				20753361258665E700A5E607 /* Object */,
 				20753360258665DB00A5E607 /* Controller */,
 			);
-			path = JKCategorys;
+			path = JYCategorys;
 			sourceTree = "<group>";
 		};
 		9D64665C20905076002128F1 /* JYSafe */ = {
@@ -535,8 +559,7 @@
 				20D4AC5620EC7DEA006693CD /* Other */,
 				2079992E20E9FDF100C34D9A /* JYUtil */,
 				208CAA1C20E1EAB100374358 /* JYConfig */,
-				9D0E94222091D48E00BF3E43 /* JKCategorys */,
-				9D64665C20905076002128F1 /* JYSafe */,
+				9D0E94222091D48E00BF3E43 /* JYCategorys */,
 				9DDD1DDA206CD27E00D35594 /* ThirdParty */,
 				20D99DE020E4BC5800F06BFE /* JYBase */,
 				204E64012266FAAE00F29622 /* JYPageViewController */,
@@ -844,6 +867,7 @@
 				20A453472122E68900540EF1 /* JYTableViewController.m in Sources */,
 				2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */,
 				20E0784E21146374003D011E /* JYConstant.m in Sources */,
+				207533C5258F4A8C00A5E607 /* JYStackViewController.m in Sources */,
 				2079993720EA0DAF00C34D9A /* NSDate+JYExtension.m in Sources */,
 				20E7CA0421130CFA0085AD75 /* NSObject+JYSafe.m in Sources */,
 				9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */,
@@ -858,7 +882,9 @@
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
 				2079992A20E9DB3C00C34D9A /* UITableView+JYExtension.m in Sources */,
 				9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */,
+				207533B3258F474700A5E607 /* JYBaseViewModel.m in Sources */,
 				2079993420EA091600C34D9A /* JYLocalNotifationCenter.m in Sources */,
+				207533BC258F484200A5E607 /* JYCollectionViewCell.m in Sources */,
 				9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */,
 				9D0E94282091D84A00BF3E43 /* UIButton+JYOptions.m in Sources */,
 				9D64665B20901CA3002128F1 /* JYTPShareTool.m in Sources */,
