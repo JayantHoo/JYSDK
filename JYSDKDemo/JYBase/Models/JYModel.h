@@ -10,8 +10,8 @@
 
 @interface JYModel : NSObject
 
-+(NSArray *) modelListFromArray:(NSArray *) array;
++ (NSArray *)modelListFromArray:(NSArray *) array;
 
-+(instancetype) modelFromDictionary:(NSDictionary *)dictionary;
++ (instancetype)modelFromDictionary:(NSDictionary *)dictionary;
 
 @end

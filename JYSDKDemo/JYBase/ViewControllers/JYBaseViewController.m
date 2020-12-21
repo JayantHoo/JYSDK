@@ -8,6 +8,7 @@
 
 #import "JYBaseViewController.h"
 #import "JYNavigationController.h"
+#import "UIViewController+PureTransition.h"
 
 @interface JYBaseViewController ()
 
@@ -33,13 +34,13 @@
         /// 默认在viewDidLoad里面服务器的数据
         _shouldRequestRemoteDataOnViewDidLoad = YES;
         
-        /// FDFullscreenPopGesture
+        ///
         _interactivePopDisabled = NO;
         _prefersNavigationBarHidden = NO;
         
         /// custom
         _prefersNavigationBarBottomLineHidden = NO;
-        
+        _prefersNavigationBarTintColor = [UIColor redColor];
         /// 允许IQKeyboardMananger接管键盘弹出事件
         _keyboardEnable = YES;
         _shouldResignOnTouchOutside = YES;
@@ -63,57 +64,25 @@
 //    IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = self.shouldResignOnTouchOutside;
 //    IQKeyboardManager.sharedManager.keyboardDistanceFromTextField = self.keyboardDistanceFromTextField;
 
-    if (nav) {
-        /**
-         原因：
-         viewController.navigationItem.backBarButtonItem = nil;
-         [viewController.navigationItem setHidesBackButton:YES];
-         CoderMikeHe: Fixed Bug 上面这个方法，会导致侧滑取消时，导航栏出现三个蓝点，系统层面的BUg
-         这种方法也不是最完美的，第一次侧滑取消 也会复现
-         */
-        for (UIView *subView in nav.navigationBar.subviews) {
-            /// 隐藏掉蓝点
-            if ([subView isKindOfClass:NSClassFromString(@"_UINavigationItemButtonView")]) {
-                subView.jy_size = CGSizeZero;
-                subView.hidden = YES;
-            }
-        }
-    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-    // Being popped, take a snapshot
-    if (self.navigationController) {
-        /**
-         viewController.navigationItem.backBarButtonItem = nil;
-         [viewController.navigationItem setHidesBackButton:YES];
-         CoderMikeHe: Fixed Bug 上面这个方法，会导致侧滑取消时，导航栏出现三个蓝点，系统层面的BUg
-         */
-        for (UIView *subView in self.navigationController.navigationBar.subviews) {
-            /// 隐藏掉蓝点
-            if ([subView isKindOfClass:NSClassFromString(@"_UINavigationItemButtonView")]) {
-                subView.jy_size = CGSizeZero;
-                subView.hidden = YES;
-            }
-        }
-    }
-    
+//    [self.navigationController.navigationBar setBarTintColor:self.prefersNavigationBarTintColor];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.extendedLayoutIncludesOpaqueBars = YES;
-    
+    [self.navigationController.navigationBar setBarTintColor:self.prefersNavigationBarTintColor];
     /// backgroundColor
     self.view.backgroundColor = [UIColor colorFromHexString:@"#EFEFF4"];
     
     /// 导航栏隐藏 只能在ViewDidLoad里面加载，无法动态
-    self.fd_prefersNavigationBarHidden = self.prefersNavigationBarHidden;
+    self.yr_prefersNavigationBarHidden = self.prefersNavigationBarHidden;
     
     /// pop手势
-    self.fd_interactivePopDisabled = self.interactivePopDisabled;
+    self.yr_interactivePopDisabled = self.interactivePopDisabled;
     
     [self configure];
     /// 请求数据

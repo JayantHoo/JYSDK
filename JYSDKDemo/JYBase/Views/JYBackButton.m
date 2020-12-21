@@ -14,7 +14,6 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
     // 布局子控件
     self.imageView.jy_x = 0;
     

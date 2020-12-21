@@ -15,13 +15,15 @@
 /// The `params` Key's `CMHViewControllerIDKey`
 @property (nonatomic, readonly, copy) NSDictionary *params;
 
-/// FDFullscreenPopGesture
+/// 
 /// (是否取消掉左滑(侧滑)pop到上一层的功能（栈底控制器无效），默认为NO，不取消)
 @property (nonatomic, readwrite, assign) BOOL interactivePopDisabled;
 /// 是否隐藏该控制器的导航栏 默认是不隐藏 (default is NO)
 @property (nonatomic, readwrite, assign) BOOL prefersNavigationBarHidden;
 /// 是否隐藏该控制器的导航栏底部的分割线 默认不隐藏 （NO）
 @property (nonatomic, readwrite, assign) BOOL prefersNavigationBarBottomLineHidden;
+///导航栏颜色
+@property (nonatomic, readwrite, strong) UIColor *prefersNavigationBarTintColor;
 
 /// IQKeyboardManager
 /// 是否让IQKeyboardManager的管理键盘的事件 默认是YES（键盘管理）
