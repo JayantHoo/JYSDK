@@ -13,11 +13,15 @@
 
 +(void)load
 {
-    [NSClassFromString(@"UIFont") swapClassMethod:@selector(systemFontOfSize:) currentMethod:@selector(jy_systemFontOfSize:)];
-    [NSClassFromString(@"UIFont") swapClassMethod:@selector(boldSystemFontOfSize:) currentMethod:@selector(jy_boldSystemFontOfSize:)];
-    [NSClassFromString(@"UIFont") swapClassMethod:@selector(italicSystemFontOfSize:) currentMethod:@selector(jy_italicSystemFontOfSize:)];
-    [NSClassFromString(@"UIFont") swapClassMethod:@selector(systemFontOfSize:weight:) currentMethod:@selector(jy_systemFontOfSize:weight:)];
-    [NSClassFromString(@"UIFont") swapClassMethod:@selector(monospacedDigitSystemFontOfSize:weight:) currentMethod:@selector(jy_monospacedDigitSystemFontOfSize:weight:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"UIFont") swapClassMethod:@selector(systemFontOfSize:) currentMethod:@selector(jy_systemFontOfSize:)];
+        [NSClassFromString(@"UIFont") swapClassMethod:@selector(boldSystemFontOfSize:) currentMethod:@selector(jy_boldSystemFontOfSize:)];
+        [NSClassFromString(@"UIFont") swapClassMethod:@selector(italicSystemFontOfSize:) currentMethod:@selector(jy_italicSystemFontOfSize:)];
+        [NSClassFromString(@"UIFont") swapClassMethod:@selector(systemFontOfSize:weight:) currentMethod:@selector(jy_systemFontOfSize:weight:)];
+        [NSClassFromString(@"UIFont") swapClassMethod:@selector(monospacedDigitSystemFontOfSize:weight:) currentMethod:@selector(jy_monospacedDigitSystemFontOfSize:weight:)];
+    });
+    
 }
 
 #pragma mark - 设置比例字体大小(以6s为标准)

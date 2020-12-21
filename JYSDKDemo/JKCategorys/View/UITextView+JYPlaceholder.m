@@ -17,9 +17,12 @@
 @implementation UITextView (JYPlaceholder)
 
 + (void)load {
-    [NSClassFromString(@"UITextView") swapMethod:@selector(setText:) currentMethod:@selector(jy_setText:)];
-    [NSClassFromString(@"UITextView") swapMethod:@selector(layoutSubviews) currentMethod:@selector(jy_layoutSubviews)];
-    [NSClassFromString(@"UITextView") swapMethod:NSSelectorFromString(@"dealloc") currentMethod:@selector(jy_dealloc)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"UITextView") swapMethod:@selector(setText:) currentMethod:@selector(jy_setText:)];
+        [NSClassFromString(@"UITextView") swapMethod:@selector(layoutSubviews) currentMethod:@selector(jy_layoutSubviews)];
+        [NSClassFromString(@"UITextView") swapMethod:NSSelectorFromString(@"dealloc") currentMethod:@selector(jy_dealloc)];
+    });
 }
 
 - (void)jy_dealloc {

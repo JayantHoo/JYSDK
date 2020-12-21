@@ -10,7 +10,6 @@
 #define PrefixHeader_pch
 
 #import "JYMacros.h"
-#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "NSString+JYSafe.h"
 #import "NSString+JYDevice.h"
 #import "NSArray+JYSafe.h"
