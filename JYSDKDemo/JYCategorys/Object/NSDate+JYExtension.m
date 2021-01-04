@@ -158,6 +158,19 @@
     {
         // 今年
         if ([self jy_isToday]) {
+            // 手机当前时间
+            NSDate *nowDate = [NSDate date];
+            NSCalendar *calendar = [NSCalendar currentCalendar];
+            NSCalendarUnit unit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+            NSDateComponents *cmps = [calendar components:unit fromDate:self toDate:nowDate options:0];
+
+            if (cmps.hour >= 1) { // 时间间隔 >= 1小时
+                return [NSString stringWithFormat:@"%zd小时前", cmps.hour];
+            } else if (cmps.minute >= 1) { // 1小时 > 时间间隔 >= 1分钟
+                return [NSString stringWithFormat:@"%zd分钟前", cmps.minute];
+            } else { // 1分钟 > 分钟
+                return @"刚刚";
+            }
             // 22:22
             dateFormatter = [NSDateFormatter jy_dateFormatterWithFormat:@"HH:mm"];
         }else if ([self jy_isYesterday]){
@@ -180,6 +193,7 @@
     
     return result;
 }
+
 
 
 @end
