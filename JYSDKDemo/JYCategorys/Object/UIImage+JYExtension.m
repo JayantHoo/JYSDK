@@ -235,6 +235,32 @@
     
     return newImage;
 }
+//按区域截图
++ (UIImage *)jy_captureScreenView:(UIView *)view inRect:(CGRect)rect {
+    
+    //把像 素rect 转化为 点rect（如无转化则按原图像素取部分图片）
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat x= rect.origin.x*scale,y=rect.origin.y*scale,w=rect.size.width*scale,h=rect.size.height*scale;
+    CGRect dianRect = CGRectMake(x, y, w, h);
+
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(view.bounds.size.width*scale, view.bounds.size.height*scale), YES, 0.0);
+
+    //设置截屏大小
+
+    [[view layer] renderInContext:UIGraphicsGetCurrentContext()];
+
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+
+    UIGraphicsEndImageContext();
+
+    CGImageRef imageRef = viewImage.CGImage;
+
+    CGImageRef imageRefRect =CGImageCreateWithImageInRect(imageRef, dianRect);
+
+    UIImage *sendImage = [[UIImage alloc] initWithCGImage:imageRefRect];
+
+    return sendImage;
+}
 
 + (UIImage *)jy_compressImage:(UIImage *)image toByte:(NSUInteger)maxLength {
     // Compress by quality

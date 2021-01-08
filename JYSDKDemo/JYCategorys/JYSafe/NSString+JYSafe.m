@@ -13,23 +13,27 @@
 
 + (void)load
 {
-    [NSClassFromString(@"__NSCFConstantString") swapMethod:@selector(substringFromIndex:)
-                                             currentMethod:@selector(lyConstant_substringFromIndex:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"__NSCFConstantString") swapMethod:@selector(substringFromIndex:)
+                                                 currentMethod:@selector(lyConstant_substringFromIndex:)];
+        
+        [NSClassFromString(@"NSTaggedPointerString") swapMethod:@selector(substringFromIndex:)
+                                                  currentMethod:@selector(lyPoint_substringFromIndex:)];
+        
+        [NSClassFromString(@"__NSCFConstantString") swapMethod:@selector(substringToIndex:)
+                                                 currentMethod:@selector(lyConstant_substringToIndex:)];
+        
+        [NSClassFromString(@"NSTaggedPointerString") swapMethod:@selector(substringToIndex:)
+                                                  currentMethod:@selector(lyPoint_substringToIndex:)];
+        
+        [NSClassFromString(@"__NSCFConstantString") swapMethod:@selector(substringWithRange:)
+                                                 currentMethod:@selector(lyConstant_substringWithRange:)];
+        
+        [NSClassFromString(@"NSTaggedPointerString") swapMethod:@selector(substringWithRange:)
+                                                  currentMethod:@selector(lyPoint_substringWithRange:)];
+    });
     
-    [NSClassFromString(@"NSTaggedPointerString") swapMethod:@selector(substringFromIndex:)
-                                              currentMethod:@selector(lyPoint_substringFromIndex:)];
-    
-    [NSClassFromString(@"__NSCFConstantString") swapMethod:@selector(substringToIndex:)
-                                             currentMethod:@selector(lyConstant_substringToIndex:)];
-    
-    [NSClassFromString(@"NSTaggedPointerString") swapMethod:@selector(substringToIndex:)
-                                              currentMethod:@selector(lyPoint_substringToIndex:)];
-    
-    [NSClassFromString(@"__NSCFConstantString") swapMethod:@selector(substringWithRange:)
-                                             currentMethod:@selector(lyConstant_substringWithRange:)];
-    
-    [NSClassFromString(@"NSTaggedPointerString") swapMethod:@selector(substringWithRange:)
-                                              currentMethod:@selector(lyPoint_substringWithRange:)];
 }
 
 - (NSString *)lyConstant_substringFromIndex:(NSUInteger)from
@@ -114,14 +118,18 @@
 
 + (void)load
 {
-    [NSClassFromString(@"NSString") swapMethod:@selector(substringFromIndex:)
-                                 currentMethod:@selector(jy_substringFromIndex:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"NSString") swapMethod:@selector(substringFromIndex:)
+                                     currentMethod:@selector(jy_substringFromIndex:)];
+        
+        [NSClassFromString(@"NSString") swapMethod:@selector(substringToIndex:)
+                                     currentMethod:@selector(jy_substringToIndex:)];
+        
+        [NSClassFromString(@"NSString") swapMethod:@selector(substringWithRange:)
+                                     currentMethod:@selector(jy_substringWithRange:)];
+    });
     
-    [NSClassFromString(@"NSString") swapMethod:@selector(substringToIndex:)
-                                 currentMethod:@selector(jy_substringToIndex:)];
-    
-    [NSClassFromString(@"NSString") swapMethod:@selector(substringWithRange:)
-                                 currentMethod:@selector(jy_substringWithRange:)];
 }
 
 - (NSString *)jy_substringFromIndex:(NSUInteger)from

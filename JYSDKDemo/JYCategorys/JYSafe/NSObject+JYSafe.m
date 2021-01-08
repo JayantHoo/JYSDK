@@ -13,8 +13,12 @@
 
 +(void)load
 {
-    [NSClassFromString(@"NSObject") swapMethod:@selector(forwardingTargetForSelector:)
-                                   currentMethod:@selector(jy_forwardingTargetForSelector:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"NSObject") swapMethod:@selector(forwardingTargetForSelector:)
+                                       currentMethod:@selector(jy_forwardingTargetForSelector:)];
+    });
+    
 }
 
 -(id)jy_forwardingTargetForSelector:(SEL)aSelector

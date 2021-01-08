@@ -28,6 +28,8 @@
 //根据宽度获取图片高度（图片比例）
 -(CGFloat) jy_imageHeightFromWidth:(CGFloat) width;
 
+
+
 /**
  *  图片不被渲染
  *
@@ -55,6 +57,9 @@
  *  屏幕截图
  */
 + (instancetype) jy_captureScreen:(UIView *)view;
+
+//按区域截图
++ (UIImage *)jy_captureScreenView:(UIView *)view inRect:(CGRect)rect;
 
 // 压缩到32字节的图片
 + (UIImage *)jy_compressImage:(UIImage *)image toByte:(NSUInteger)maxLength;

@@ -10,12 +10,12 @@
 
 @implementation JYModel
 
-+ (NSArray *)modelListFromArray:(NSArray *) array {
-    
-}
-
-+ (instancetype)modelFromDictionary:(NSDictionary *)dictionary {
-    
-}
+//+ (NSArray *)modelListFromArray:(NSArray *) array {
+//    
+//}
+//
+//+ (instancetype)modelFromDictionary:(NSDictionary *)dictionary {
+//    
+//}
 
 @end

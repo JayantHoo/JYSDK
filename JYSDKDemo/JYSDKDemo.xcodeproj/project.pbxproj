@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20057A64259082CA00737CB2 /* UIControl+ClickInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */; };
 		20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */; };
 		204E63FD2264351600F29622 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E63FC2264351600F29622 /* JYSegmentView.m */; };
 		204E64042266FAE300F29622 /* JYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E64032266FAE300F29622 /* JYPageViewController.m */; };
@@ -110,6 +111,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20057A62259082CA00737CB2 /* UIControl+ClickInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ClickInterval.h"; sourceTree = "<group>"; };
+		20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ClickInterval.m"; sourceTree = "<group>"; };
 		20408EF7258CE28B00CEEDBC /* UITextView+JYPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JYPlaceholder.h"; sourceTree = "<group>"; };
 		20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JYPlaceholder.m"; sourceTree = "<group>"; };
 		204E63FB2264351600F29622 /* JYSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYSegmentView.h; sourceTree = "<group>"; };
@@ -386,6 +389,8 @@
 				2079992020E9CB7800C34D9A /* UITextField+JYExtension.m */,
 				2075336C2586668500A5E607 /* UILabel+JYCategory.h */,
 				2075336D2586668500A5E607 /* UILabel+JYCategory.m */,
+				20057A62259082CA00737CB2 /* UIControl+ClickInterval.h */,
+				20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -859,6 +864,7 @@
 			files = (
 				2079994020EA175A00C34D9A /* UIImageView+JYWebImage.m in Sources */,
 				2075338C258A615500A5E607 /* UIViewController+PureTransition.m in Sources */,
+				20057A64259082CA00737CB2 /* UIControl+ClickInterval.m in Sources */,
 				20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */,
 				2075336E2586668500A5E607 /* UILabel+JYCategory.m in Sources */,
 				9D0E942E2091DEDE00BF3E43 /* UIImage+JYExtension.m in Sources */,

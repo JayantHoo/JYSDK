@@ -13,17 +13,18 @@
 
 + (void)load
 {
-    [NSClassFromString(@"__NSPlaceholderArray") swapMethod:@selector(initWithObjects:count:)
-                                             currentMethod:@selector(jy_initWithObjects:count:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"__NSPlaceholderArray") swapMethod:@selector(initWithObjects:count:)
+                                                 currentMethod:@selector(jy_initWithObjects:count:)];
+        [NSClassFromString(@"__NSArrayI") swapMethod:@selector(objectAtIndex:)
+                                       currentMethod:@selector(jy_objectAtIndex:)];
+        [NSClassFromString(@"__NSArray0") swapMethod:@selector(objectAtIndex:)
+                                       currentMethod:@selector(jy_zeroObjectAtIndex:)];
+        [NSClassFromString(@"__NSSingleObjectArrayI") swapMethod:@selector(objectAtIndex:)
+                                                   currentMethod:@selector(jy_singleObjectAtIndex:)];
+    });
     
-    [NSClassFromString(@"__NSArrayI") swapMethod:@selector(objectAtIndex:)
-                                   currentMethod:@selector(jy_objectAtIndex:)];
-    
-    [NSClassFromString(@"__NSArray0") swapMethod:@selector(objectAtIndex:)
-                                   currentMethod:@selector(jy_zeroObjectAtIndex:)];
-    
-    [NSClassFromString(@"__NSSingleObjectArrayI") swapMethod:@selector(objectAtIndex:)
-                                               currentMethod:@selector(jy_singleObjectAtIndex:)];
 }
 
 - (instancetype)jy_initWithObjects:(id *)objects count:(NSUInteger)cnt
@@ -76,23 +77,22 @@
 
 + (void)load
 {
-    [NSClassFromString(@"__NSArrayM") swapMethod:@selector(objectAtIndex:)
-                                   currentMethod:@selector(jy_objectAtIndex:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"__NSArrayM") swapMethod:@selector(objectAtIndex:)
+                                       currentMethod:@selector(jy_objectAtIndex:)];
+        [NSClassFromString(@"__NSArrayM") swapMethod:@selector(addObject:)
+                                       currentMethod:@selector(jy_addObject:)];
+        [NSClassFromString(@"__NSArrayM") swapMethod:@selector(removeObjectAtIndex:)
+                                       currentMethod:@selector(jy_removeObjectAtIndex:)];
+        [NSClassFromString(@"__NSArrayM") swapMethod:@selector(replaceObjectAtIndex:withObject:)
+                                       currentMethod:@selector(jy_replaceObjectAtIndex:withObject:)];
+        [NSClassFromString(@"__NSArrayM") swapMethod:@selector(removeObjectsInRange:)
+                                       currentMethod:@selector(jy_removeObjectsInRange:)];
+        [NSClassFromString(@"__NSArrayM") swapMethod:@selector(insertObject:atIndex:)
+                                       currentMethod:@selector(jy_insertObject:atIndex:)];
+    });
     
-    [NSClassFromString(@"__NSArrayM") swapMethod:@selector(addObject:)
-                                   currentMethod:@selector(jy_addObject:)];
-    
-    [NSClassFromString(@"__NSArrayM") swapMethod:@selector(removeObjectAtIndex:)
-                                   currentMethod:@selector(jy_removeObjectAtIndex:)];
-    
-    [NSClassFromString(@"__NSArrayM") swapMethod:@selector(replaceObjectAtIndex:withObject:)
-                                   currentMethod:@selector(jy_replaceObjectAtIndex:withObject:)];
-    
-    [NSClassFromString(@"__NSArrayM") swapMethod:@selector(removeObjectsInRange:)
-                                   currentMethod:@selector(jy_removeObjectsInRange:)];
-    
-    [NSClassFromString(@"__NSArrayM") swapMethod:@selector(insertObject:atIndex:)
-                                   currentMethod:@selector(jy_insertObject:atIndex:)];
 }
 
 - (id)jy_objectAtIndex:(NSUInteger)index

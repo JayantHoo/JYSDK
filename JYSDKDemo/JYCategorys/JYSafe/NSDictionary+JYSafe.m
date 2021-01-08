@@ -13,8 +13,12 @@
 
 + (void)load
 {
-    [NSClassFromString(@"NSDictionary") swapMethod:@selector(initWithObjects:forKeys:count:)
-                                     currentMethod:@selector(jy_initWithObjects:forKeys:count:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"NSDictionary") swapMethod:@selector(initWithObjects:forKeys:count:)
+                                         currentMethod:@selector(jy_initWithObjects:forKeys:count:)];;
+    });
+    
 }
 
 - (instancetype)jy_initWithObjects:(const id [])objects forKeys:(const id<NSCopying> [])keys count:(NSUInteger)cnt
@@ -49,8 +53,12 @@
 
 + (void)load
 {
-    [NSClassFromString(@"__NSDictionaryM") swapMethod:@selector(setObject:forKey:)
-                                        currentMethod:@selector(jy_setObject:forKey:)];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [NSClassFromString(@"__NSDictionaryM") swapMethod:@selector(setObject:forKey:)
+                                            currentMethod:@selector(jy_setObject:forKey:)];
+    });
+    
 }
 
 - (void)jy_setObject:(id)anObject forKey:(id <NSCopying>)aKey
