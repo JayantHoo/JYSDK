@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2003C95B25AD54EE00A1627F /* JYTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003C95A25AD54EE00A1627F /* JYTestTableViewCell.m */; };
 		20057A64259082CA00737CB2 /* UIControl+ClickInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */; };
 		20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */; };
 		204E63FD2264351600F29622 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E63FC2264351600F29622 /* JYSegmentView.m */; };
@@ -111,6 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2003C95925AD54EE00A1627F /* JYTestTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTestTableViewCell.h; sourceTree = "<group>"; };
+		2003C95A25AD54EE00A1627F /* JYTestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTestTableViewCell.m; sourceTree = "<group>"; };
 		20057A62259082CA00737CB2 /* UIControl+ClickInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ClickInterval.h"; sourceTree = "<group>"; };
 		20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ClickInterval.m"; sourceTree = "<group>"; };
 		20408EF7258CE28B00CEEDBC /* UITextView+JYPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JYPlaceholder.h"; sourceTree = "<group>"; };
@@ -598,6 +601,8 @@
 				9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */,
 				207533A4258F3D9100A5E607 /* JYTestViewController.h */,
 				207533A5258F3D9100A5E607 /* JYTestViewController.m */,
+				2003C95925AD54EE00A1627F /* JYTestTableViewCell.h */,
+				2003C95A25AD54EE00A1627F /* JYTestTableViewCell.m */,
 				9D8AC3F1206B9B3A00BD6FB5 /* Assets.xcassets */,
 				9D8AC3F3206B9B3A00BD6FB5 /* LaunchScreen.storyboard */,
 				9D8AC3F6206B9B3A00BD6FB5 /* Info.plist */,
@@ -872,6 +877,7 @@
 				20D39E1B20E387320088F4BF /* JYDefaultHelper.m in Sources */,
 				20A453472122E68900540EF1 /* JYTableViewController.m in Sources */,
 				2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */,
+				2003C95B25AD54EE00A1627F /* JYTestTableViewCell.m in Sources */,
 				20E0784E21146374003D011E /* JYConstant.m in Sources */,
 				207533C5258F4A8C00A5E607 /* JYStackViewController.m in Sources */,
 				2079993720EA0DAF00C34D9A /* NSDate+JYExtension.m in Sources */,

@@ -6,11 +6,11 @@
 //  Copyright © 2020 isenu. All rights reserved.
 //
 
-#import "JYBaseViewController.h"
+#import "JYTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYTestViewController : JYBaseViewController
+@interface JYTestViewController : JYTableViewController
 
 @end
 
