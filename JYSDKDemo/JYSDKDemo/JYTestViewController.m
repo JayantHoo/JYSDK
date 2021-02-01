@@ -121,6 +121,15 @@
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    CGPoint vel = [scrollView.panGestureRecognizer velocityInView:scrollView];
+//    NSLog(@"%f",vel.y);
+//    _scrollToTop = vel.y > 0;
+//    if (vel.y > 0) {
+//        // 下拉
+//    }else
+//    {
+//        // 上拉
+//    }
     if (_total>15) {
         NSArray<NSIndexPath *> *indexPathList = [self.tableView indexPathsForVisibleRows];
         JYTestTableViewCell *secondCell = (JYTestTableViewCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.firstIndexPath.row+1 inSection:0]];
@@ -134,15 +143,33 @@
 
 }
 
-//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+//    NSLog(@"滑动结束：%@",@(velocity.y));
+//    if (velocity.y < 0.0) {//下拉
+        NSArray<NSIndexPath *> *indexPathList = [self.tableView indexPathsForVisibleRows];
+        [indexPathList enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            JYTestTableViewCell *tempCell = (JYTestTableViewCell *)[self.tableView cellForRowAtIndexPath:obj];
+            if (idx != 0) {
+                tempCell.isDesalt = NO;
+            }else {
+                tempCell.isDesalt = YES;
+            }
+        }];
+//    }
+}
+
+//- (void)scrollViewWillEndDecelerating:(UIScrollView *)scrollView {
 //
-////    NSArray<NSIndexPath *> *indexPathList = [self.tableView indexPathsForVisibleRows];
-////    [indexPathList enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-////        if (idx != 0) {
-////            JYTestTableViewCell *notFirstCell = (JYTestTableViewCell *)[self.tableView cellForRowAtIndexPath:self.firstIndexPath];
-////            notFirstCell.isDesalt = NO;
-////        }
-////    }];
+//    NSArray<NSIndexPath *> *indexPathList = [self.tableView indexPathsForVisibleRows];
+//    [indexPathList enumerateObjectsUsingBlock:^(NSIndexPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        JYTestTableViewCell *tempCell = (JYTestTableViewCell *)[self.tableView cellForRowAtIndexPath:obj];
+//        if (idx != 0) {
+//            tempCell.isDesalt = NO;
+//        }else {
+//            tempCell.isDesalt = YES;
+//        }
+//    }];
 //}
 
 @end

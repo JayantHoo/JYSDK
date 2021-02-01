@@ -61,12 +61,16 @@
 //    textView.text = @"发送到发送到会计法哈卡两极分化";
 //    textView.jy_placeholderFont = [UIFont systemFontOfSize:20];
 //    [self.view addSubview:textView];
-    UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 20)];
-    testLabel.backgroundColor = [UIColor redColor];
-    testLabel.text = @"标题自适应大小标题自适应大小标题自适应大小";
-    testLabel.adjustsFontSizeToFitWidth = YES;
+//    NSAttributedString *attriStr = [[NSAttributedString alloc] initWithString:@"标题自适应大小标题自适应大小标题自适应sadafadfdfaf大小dafdadfasdfasd" attributes:@{NSBackgroundColorDocumentAttribute:JYColorFromHexString(@"#686ADF"),NSBaselineOffsetAttributeName:@(8)}];
+    UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 60)];
+    testLabel.backgroundColor = [UIColor whiteColor];
+    testLabel.text = @"发送到发送到会计法adfasdfasfdasdfasadfadfasdfasdfasdfasdfasdfa";
+    testLabel.font = JYFont(17, NO);
+    testLabel.numberOfLines = 2;
+    testLabel.lineBreakMode = NSLineBreakByCharWrapping;
+    testLabel.allowsDefaultTighteningForTruncation = YES;
     [self.view addSubview:testLabel];
-    
+
 }
 
 //-(void)panGuestAction

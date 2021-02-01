@@ -7,7 +7,7 @@
 //
 
 #import "JYTestTableViewCell.h"
-
+#import "NSObject+JYRuntime.h"
 @interface JYTestTableViewCell ()
 
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -17,10 +17,12 @@
 
 @implementation JYTestTableViewCell
 
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
         [self initUI];
         [self makeConstraint];
     }

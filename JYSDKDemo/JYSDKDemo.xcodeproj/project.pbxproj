@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2003C95B25AD54EE00A1627F /* JYTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003C95A25AD54EE00A1627F /* JYTestTableViewCell.m */; };
 		20057A64259082CA00737CB2 /* UIControl+ClickInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */; };
+		2018C50C25B814CF00C6806E /* apple-app-site-association in Resources */ = {isa = PBXBuildFile; fileRef = 2018C50B25B814CF00C6806E /* apple-app-site-association */; };
 		20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */; };
 		204E63FD2264351600F29622 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E63FC2264351600F29622 /* JYSegmentView.m */; };
 		204E64042266FAE300F29622 /* JYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E64032266FAE300F29622 /* JYPageViewController.m */; };
@@ -116,6 +117,7 @@
 		2003C95A25AD54EE00A1627F /* JYTestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTestTableViewCell.m; sourceTree = "<group>"; };
 		20057A62259082CA00737CB2 /* UIControl+ClickInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ClickInterval.h"; sourceTree = "<group>"; };
 		20057A63259082CA00737CB2 /* UIControl+ClickInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ClickInterval.m"; sourceTree = "<group>"; };
+		2018C50B25B814CF00C6806E /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
 		20408EF7258CE28B00CEEDBC /* UITextView+JYPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JYPlaceholder.h"; sourceTree = "<group>"; };
 		20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JYPlaceholder.m"; sourceTree = "<group>"; };
 		204E63FB2264351600F29622 /* JYSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYSegmentView.h; sourceTree = "<group>"; };
@@ -606,6 +608,7 @@
 				9D8AC3F1206B9B3A00BD6FB5 /* Assets.xcassets */,
 				9D8AC3F3206B9B3A00BD6FB5 /* LaunchScreen.storyboard */,
 				9D8AC3F6206B9B3A00BD6FB5 /* Info.plist */,
+				2018C50B25B814CF00C6806E /* apple-app-site-association */,
 				9D8AC3F7206B9B3A00BD6FB5 /* main.m */,
 			);
 			path = JYSDKDemo;
@@ -799,6 +802,7 @@
 			files = (
 				9D8AC3F5206B9B3A00BD6FB5 /* LaunchScreen.storyboard in Resources */,
 				9D8AC3F2206B9B3A00BD6FB5 /* Assets.xcassets in Resources */,
+				2018C50C25B814CF00C6806E /* apple-app-site-association in Resources */,
 				9DDD1DDE206CD2AF00D35594 /* AlipaySDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
