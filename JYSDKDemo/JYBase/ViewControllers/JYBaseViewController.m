@@ -59,10 +59,7 @@
         self.prefersNavigationBarBottomLineHidden?[nav hideNavigationBottomLine]:[nav showNavigationBottomLine];
     }
 
-//    // 配置键盘
-//    IQKeyboardManager.sharedManager.enable = self.keyboardEnable;
-//    IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = self.shouldResignOnTouchOutside;
-//    IQKeyboardManager.sharedManager.keyboardDistanceFromTextField = self.keyboardDistanceFromTextField;
+
 
 }
 
@@ -83,6 +80,11 @@
     
     /// pop手势
     self.yr_interactivePopDisabled = self.interactivePopDisabled;
+    
+//         //配置键盘
+//        IQKeyboardManager.sharedManager.enable = self.keyboardEnable;
+//        IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = self.shouldResignOnTouchOutside;
+//        IQKeyboardManager.sharedManager.keyboardDistanceFromTextField = self.keyboardDistanceFromTextField;
     
     [self configure];
     /// 请求数据

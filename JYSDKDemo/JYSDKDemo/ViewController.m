@@ -32,10 +32,10 @@
 //    UIImage *image = [UIImage imageWithUrl:@"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3087915783,104865090&fm=26&gp=0.jpg"];
 //
 //    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-////    [button jy_setNormalTitle:@"测试" titleColor:[UIColor redColor]];
-//    [button setImage:[UIImage jy_compressImage:image toByte:100] forState:UIControlStateNormal];
+//    [button jy_setNormalTitle:@"测试" titleColor:[UIColor redColor]];
+////    [button setImage:[UIImage jy_compressImage:image toByte:100] forState:UIControlStateNormal];
 //    button.frame = CGRectMake(40, 60, 60, 50);
-//    [button addTarget:self action:@selector(doSomethingTest) forControlEvents:UIControlEventTouchUpInside];
+//    [button addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
 //    [self.view addSubview:button];
     
 //    JYSegmentView *segment = [[JYSegmentView alloc] initWithTitels:@[@"dududu",@"seleeee"] frame:CGRectMake(20, 50, 200, 44)];
@@ -62,14 +62,14 @@
 //    textView.jy_placeholderFont = [UIFont systemFontOfSize:20];
 //    [self.view addSubview:textView];
 //    NSAttributedString *attriStr = [[NSAttributedString alloc] initWithString:@"标题自适应大小标题自适应大小标题自适应sadafadfdfaf大小dafdadfasdfasd" attributes:@{NSBackgroundColorDocumentAttribute:JYColorFromHexString(@"#686ADF"),NSBaselineOffsetAttributeName:@(8)}];
-    UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 60)];
-    testLabel.backgroundColor = [UIColor whiteColor];
-    testLabel.text = @"发送到发送到会计法adfasdfasfdasdfasadfadfasdfasdfasdfasdfasdfa";
-    testLabel.font = JYFont(17, NO);
-    testLabel.numberOfLines = 2;
-    testLabel.lineBreakMode = NSLineBreakByCharWrapping;
-    testLabel.allowsDefaultTighteningForTruncation = YES;
-    [self.view addSubview:testLabel];
+//    UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 60)];
+//    testLabel.backgroundColor = [UIColor whiteColor];
+//    testLabel.text = @"发送到发送到会计法adfasdfasfdasdfasadfadfasdfasdfasdfasdfasdfa";
+//    testLabel.font = JYFont(17, NO);
+//    testLabel.numberOfLines = 2;
+//    testLabel.lineBreakMode = NSLineBreakByCharWrapping;
+//    testLabel.allowsDefaultTighteningForTruncation = YES;
+//    [self.view addSubview:testLabel];
 
 }
 
