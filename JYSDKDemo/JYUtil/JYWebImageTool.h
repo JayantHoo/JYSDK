@@ -29,6 +29,9 @@ typedef void(^JYWebImageDownloaderProgressBlock)(NSInteger receivedSize, NSInteg
  */
 + (void)downloadImageWithURL:(nullable NSString *)url progress:(nullable JYWebImageDownloaderProgressBlock)progressBlock completed:(nullable JYWebImageCompletionWithFinishedBlock)completedBlock;
 
+//同步加载图片
++ (UIImage *_Nullable)jy_loadImageWithUrl:(NSString *_Nullable)url;
+
 /**
  *  解决内存警告
  */

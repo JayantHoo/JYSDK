@@ -30,10 +30,22 @@
         }
     }];
 }
+
++ (UIImage *_Nullable)jy_loadImageWithUrl:(NSString *_Nullable)url {
+    __block UIImage *tempImage = nil;
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString: url] options:SDWebImageAvoidAutoSetImage progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+        tempImage = image;
+        dispatch_semaphore_signal(semaphore);
+    }];
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    return tempImage;
+}
+
 /**
  *  解决内存警告
  */
-+ (void) clearWebImageCache
++ (void)clearWebImageCache
 {
     // 赶紧清除所有的内存缓存
     [[SDImageCache sharedImageCache] clearMemory];
