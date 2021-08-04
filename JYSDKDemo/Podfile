@@ -24,5 +24,9 @@ target "JYSDKDemo" do
     pod 'KVOController'          , '1.2.0'      #FaceBook KVO（优雅的代替系统原生的KVO）
     pod 'WechatOpenSDK'
     pod 'Weibo_SDK', :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
-    
+    pod 'Toast'                   ,'~> 4.0.0'    #toast
+    #pod 'TZImagePickerController' ,'~> 3.2.4'    #图片选择工具
+    pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'       #提示HUD
+    pod 'YBImageBrowser'
+    pod 'Reachability'                          #网络监测
 end

@@ -9,7 +9,49 @@
 #import "UIButton+JYOptions.h"
 #import <objc/runtime.h>
 
+static NSString *action_key = @"buttonActionBlockKey";
+
 @implementation UIButton (JYOptions)
+
+
++ (instancetype) buttonWithTitle:(NSString *_Nullable) title
+                      titleColor:(UIColor *_Nullable)  titleColor
+                     selectTitle:(NSString *_Nullable) selectTitle
+                selectTitleColor:(UIColor *_Nullable)  selectTitleColor
+                 normalImageName:(NSString *_Nullable) imageName
+                 selectImageName:(NSString *_Nullable) selectImageName {
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (title) {
+        [button setTitle:title forState:UIControlStateNormal];
+    }
+    if (titleColor) {
+        [button setTitleColor:titleColor forState:UIControlStateNormal];
+    }
+    if (selectTitle) {
+        [button setTitle:selectTitle forState:UIControlStateSelected];
+    }
+    if (selectTitleColor) {
+        [button setTitleColor:selectTitleColor forState:UIControlStateSelected];
+    }
+    if (imageName) {
+        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    }
+    if (selectImageName) {
+        [button setImage:[UIImage imageNamed:selectImageName] forState:UIControlStateSelected];
+    }
+    
+    
+    
+    return button;
+    
+}
+
+
+
+
+
+
 
 #pragma mark -setter / getter
 -(void)setTitleFont:(UIFont *)titleFont
@@ -124,6 +166,37 @@
         default:
             break;
     }
+}
+
+-(void)hightDelete:(UIButton *)sender
+{
+    sender.highlighted = NO;
+}
+
+- (void)cp_buttonAction:(UIButton *)sender{
+    
+    self.userInteractionEnabled = NO;
+    __weak typeof(self)weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        weakSelf.userInteractionEnabled = YES;
+    });
+    ButtonActionCallBack block = (ButtonActionCallBack)objc_getAssociatedObject(self, &action_key);
+    if (block) {
+        block(sender);
+    }
+}
+
+-(void)addCallBackAction:(ButtonActionCallBack)action
+        forControlEvents:(UIControlEvents)controlEvents
+{
+    objc_setAssociatedObject(self, &action_key, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self addTarget:self action:@selector(hightDelete:) forControlEvents:UIControlEventAllEvents];
+    [self addTarget:self action:@selector(cp_buttonAction:) forControlEvents:controlEvents];
+}
+
+-(void)addCallBackAction:(ButtonActionCallBack)action
+{
+    [self addCallBackAction:action forControlEvents:UIControlEventTouchUpInside];
 }
 
 @end

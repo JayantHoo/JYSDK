@@ -16,6 +16,10 @@ typedef NS_ENUM(NSUInteger, JYButtonEdgeInsetType) {
     JYTitleRightImageLeftType,//图左字右
 };
 
+
+typedef void(^ButtonActionCallBack)(UIButton *button);
+
+
 @interface UIButton (JYOptions)
 
 @property (nonatomic,strong) UIFont *titleFont;/// 按钮标题字体大小
@@ -45,6 +49,17 @@ typedef NS_ENUM(NSUInteger, JYButtonEdgeInsetType) {
 -(void)jy_setDisabledBackgroundImage:(NSString *)imageName;
 
 -(void)jy_makeButtonEdgeInsetType:(JYButtonEdgeInsetType )type WithSpace:(CGFloat) space;
+
+/**
+ 快速添加 button 的监听
+
+ @param action 执行的方法
+ @param controlEvents 事件
+ */
+-(void)addCallBackAction:(ButtonActionCallBack)action
+        forControlEvents:(UIControlEvents)controlEvents;
+
+-(void)addCallBackAction:(ButtonActionCallBack)action;
 
 @end
 

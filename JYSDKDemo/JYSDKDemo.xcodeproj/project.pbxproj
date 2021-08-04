@@ -13,6 +13,14 @@
 		20408EF9258CE28B00CEEDBC /* UITextView+JYPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20408EF8258CE28B00CEEDBC /* UITextView+JYPlaceholder.m */; };
 		204E63FD2264351600F29622 /* JYSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E63FC2264351600F29622 /* JYSegmentView.m */; };
 		204E64042266FAE300F29622 /* JYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E64032266FAE300F29622 /* JYPageViewController.m */; };
+		2054C94B26BAF0F600063150 /* UICollectionView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C94526BAF0F600063150 /* UICollectionView+EmptyView.m */; };
+		2054C94C26BAF0F600063150 /* CPEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C94726BAF0F600063150 /* CPEmptyView.m */; };
+		2054C94D26BAF0F600063150 /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C94826BAF0F600063150 /* UITableView+EmptyView.m */; };
+		2054C95026BAF2C800063150 /* FBKVOController+JYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C94E26BAF2C800063150 /* FBKVOController+JYExtension.m */; };
+		2054C95526BAF37D00063150 /* UIViewController+SHPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95326BAF37D00063150 /* UIViewController+SHPhoto.m */; };
+		2054C95626BAF37D00063150 /* UIViewController+CPPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95426BAF37D00063150 /* UIViewController+CPPush.m */; };
+		2054C95D26BAF65500063150 /* JYHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95926BAF65500063150 /* JYHttpResponse.m */; };
+		2054C95E26BAF65500063150 /* JYNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95A26BAF65500063150 /* JYNetworkingManager.m */; };
 		20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075334F258660C800A5E607 /* JYBaseAlertView.m */; };
 		20753356258661E800A5E607 /* JYAlertSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753355258661E800A5E607 /* JYAlertSheet.m */; };
 		2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075335B2586642200A5E607 /* JYTableViewCell.m */; };
@@ -124,6 +132,24 @@
 		204E63FC2264351600F29622 /* JYSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYSegmentView.m; sourceTree = "<group>"; };
 		204E64022266FAE300F29622 /* JYPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPageViewController.h; sourceTree = "<group>"; };
 		204E64032266FAE300F29622 /* JYPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPageViewController.m; sourceTree = "<group>"; };
+		2054C94326BACE9A00063150 /* Codelump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Codelump.h; sourceTree = "<group>"; };
+		2054C94526BAF0F600063150 /* UICollectionView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+EmptyView.m"; sourceTree = "<group>"; };
+		2054C94626BAF0F600063150 /* UITableView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
+		2054C94726BAF0F600063150 /* CPEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPEmptyView.m; sourceTree = "<group>"; };
+		2054C94826BAF0F600063150 /* UITableView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyView.m"; sourceTree = "<group>"; };
+		2054C94926BAF0F600063150 /* UICollectionView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+EmptyView.h"; sourceTree = "<group>"; };
+		2054C94A26BAF0F600063150 /* CPEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPEmptyView.h; sourceTree = "<group>"; };
+		2054C94E26BAF2C800063150 /* FBKVOController+JYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FBKVOController+JYExtension.m"; sourceTree = "<group>"; };
+		2054C94F26BAF2C800063150 /* FBKVOController+JYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBKVOController+JYExtension.h"; sourceTree = "<group>"; };
+		2054C95126BAF37D00063150 /* UIViewController+SHPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHPhoto.h"; sourceTree = "<group>"; };
+		2054C95226BAF37D00063150 /* UIViewController+CPPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CPPush.h"; sourceTree = "<group>"; };
+		2054C95326BAF37D00063150 /* UIViewController+SHPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHPhoto.m"; sourceTree = "<group>"; };
+		2054C95426BAF37D00063150 /* UIViewController+CPPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CPPush.m"; sourceTree = "<group>"; };
+		2054C95826BAF65500063150 /* JYNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYNetworkingManager.h; sourceTree = "<group>"; };
+		2054C95926BAF65500063150 /* JYHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYHttpResponse.m; sourceTree = "<group>"; };
+		2054C95A26BAF65500063150 /* JYNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNetworkingManager.m; sourceTree = "<group>"; };
+		2054C95B26BAF65500063150 /* JYHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYHttpResponse.h; sourceTree = "<group>"; };
+		2054C95C26BAF65500063150 /* JYHTTPServiceConnstent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYHTTPServiceConnstent.h; sourceTree = "<group>"; };
 		2075334E258660C800A5E607 /* JYBaseAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseAlertView.h; sourceTree = "<group>"; };
 		2075334F258660C800A5E607 /* JYBaseAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseAlertView.m; sourceTree = "<group>"; };
 		20753354258661E800A5E607 /* JYAlertSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYAlertSheet.h; sourceTree = "<group>"; };
@@ -334,9 +360,40 @@
 			path = JYPageViewController;
 			sourceTree = "<group>";
 		};
+		2054C94426BAF0F600063150 /* CPEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				2054C94A26BAF0F600063150 /* CPEmptyView.h */,
+				2054C94726BAF0F600063150 /* CPEmptyView.m */,
+				2054C94926BAF0F600063150 /* UICollectionView+EmptyView.h */,
+				2054C94526BAF0F600063150 /* UICollectionView+EmptyView.m */,
+				2054C94626BAF0F600063150 /* UITableView+EmptyView.h */,
+				2054C94826BAF0F600063150 /* UITableView+EmptyView.m */,
+			);
+			path = CPEmptyView;
+			sourceTree = "<group>";
+		};
+		2054C95726BAF65500063150 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				2054C95B26BAF65500063150 /* JYHttpResponse.h */,
+				2054C95926BAF65500063150 /* JYHttpResponse.m */,
+				2054C95C26BAF65500063150 /* JYHTTPServiceConnstent.h */,
+				2054C95826BAF65500063150 /* JYNetworkingManager.h */,
+				2054C95A26BAF65500063150 /* JYNetworkingManager.m */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
 		20753360258665DB00A5E607 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2054C95226BAF37D00063150 /* UIViewController+CPPush.h */,
+				2054C95426BAF37D00063150 /* UIViewController+CPPush.m */,
+				2054C95126BAF37D00063150 /* UIViewController+SHPhoto.h */,
+				2054C95326BAF37D00063150 /* UIViewController+SHPhoto.m */,
+				2054C94F26BAF2C800063150 /* FBKVOController+JYExtension.h */,
+				2054C94E26BAF2C800063150 /* FBKVOController+JYExtension.m */,
 				20753384258A615500A5E607 /* YRNavigationBarPure */,
 			);
 			path = Controller;
@@ -424,6 +481,7 @@
 		2079992E20E9FDF100C34D9A /* JYUtil */ = {
 			isa = PBXGroup;
 			children = (
+				2054C95726BAF65500063150 /* HTTP */,
 				2079992F20E9FE7E00C34D9A /* JYControllerHelper.h */,
 				2079993020E9FE7E00C34D9A /* JYControllerHelper.m */,
 				2079993B20EA103600C34D9A /* JYWebImageTool.h */,
@@ -469,6 +527,7 @@
 		20D4AC5620EC7DEA006693CD /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2054C94426BAF0F600063150 /* CPEmptyView */,
 				20D4AC5720EC7E0C006693CD /* JYEmptyDataView.h */,
 				20D4AC5820EC7E0C006693CD /* JYEmptyDataView.m */,
 			);
@@ -601,6 +660,7 @@
 				9D8AC3E9206B9B3A00BD6FB5 /* AppDelegate.m */,
 				9D8AC3EB206B9B3A00BD6FB5 /* ViewController.h */,
 				9D8AC3EC206B9B3A00BD6FB5 /* ViewController.m */,
+				2054C94326BACE9A00063150 /* Codelump.h */,
 				207533A4258F3D9100A5E607 /* JYTestViewController.h */,
 				207533A5258F3D9100A5E607 /* JYTestViewController.m */,
 				2003C95925AD54EE00A1627F /* JYTestTableViewCell.h */,
@@ -880,6 +940,7 @@
 				20D8A0EF2112A56A009DBE91 /* JYModel.m in Sources */,
 				20D39E1B20E387320088F4BF /* JYDefaultHelper.m in Sources */,
 				20A453472122E68900540EF1 /* JYTableViewController.m in Sources */,
+				2054C94C26BAF0F600063150 /* CPEmptyView.m in Sources */,
 				2075338B258A615500A5E607 /* UIView+Snapshot.m in Sources */,
 				2003C95B25AD54EE00A1627F /* JYTestTableViewCell.m in Sources */,
 				20E0784E21146374003D011E /* JYConstant.m in Sources */,
@@ -888,16 +949,20 @@
 				20E7CA0421130CFA0085AD75 /* NSObject+JYSafe.m in Sources */,
 				9D0E942B2091D92E00BF3E43 /* UIView+JYRect.m in Sources */,
 				2079992D20E9F89900C34D9A /* NSString+JYValid.m in Sources */,
+				2054C95526BAF37D00063150 /* UIViewController+SHPhoto.m in Sources */,
 				20E7CA0721130FE20085AD75 /* JYSafeProtector.m in Sources */,
+				2054C95626BAF37D00063150 /* UIViewController+CPPush.m in Sources */,
 				2079993120E9FE7E00C34D9A /* JYControllerHelper.m in Sources */,
 				9D646662209050E9002128F1 /* NSObject+JYRuntime.m in Sources */,
 				20D4AC4F20EC63E2006693CD /* UIImage+JYBlur.m in Sources */,
 				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
 				207533A6258F3D9100A5E607 /* JYTestViewController.m in Sources */,
+				2054C95E26BAF65500063150 /* JYNetworkingManager.m in Sources */,
 				207533772586674D00A5E607 /* UIView+JYBageView.m in Sources */,
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
 				2079992A20E9DB3C00C34D9A /* UITableView+JYExtension.m in Sources */,
 				9D0E94252091D68A00BF3E43 /* NSString+JYDevice.m in Sources */,
+				2054C95D26BAF65500063150 /* JYHttpResponse.m in Sources */,
 				207533B3258F474700A5E607 /* JYBaseViewModel.m in Sources */,
 				2079993420EA091600C34D9A /* JYLocalNotifationCenter.m in Sources */,
 				207533BC258F484200A5E607 /* JYCollectionViewCell.m in Sources */,
@@ -917,6 +982,7 @@
 				20D99DF720E4E10800F06BFE /* UIColor+JYExtension.m in Sources */,
 				20E0783F21145C63003D011E /* JYTabBar.m in Sources */,
 				20753356258661E800A5E607 /* JYAlertSheet.m in Sources */,
+				2054C94D26BAF0F600063150 /* UITableView+EmptyView.m in Sources */,
 				2079992720E9CE5700C34D9A /* UITabBar+JYBage.m in Sources */,
 				208CAA2420E1F26C00374358 /* JYTPHelperConfig.m in Sources */,
 				2079993D20EA103600C34D9A /* JYWebImageTool.m in Sources */,
@@ -930,6 +996,7 @@
 				204E63FD2264351600F29622 /* JYSegmentView.m in Sources */,
 				9D8AC3EA206B9B3A00BD6FB5 /* AppDelegate.m in Sources */,
 				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
+				2054C94B26BAF0F600063150 /* UICollectionView+EmptyView.m in Sources */,
 				2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */,
 				2075337D2586687D00A5E607 /* JYScanNative.m in Sources */,
 				20A4534A2123274000540EF1 /* JYWebViewController.m in Sources */,
@@ -937,6 +1004,7 @@
 				20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */,
 				20D4AC5520EC6ABF006693CD /* UIFont+JYExtenison.m in Sources */,
 				208CAA2720E21AA900374358 /* JYQQHelper.m in Sources */,
+				2054C95026BAF2C800063150 /* FBKVOController+JYExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,4 +18,17 @@
 @property (nonatomic, copy) NSURLRequest *request;
 
 
+@property (nonatomic,copy) NSString *htmlText;///
+
+@property (nonatomic,copy) NSString *link;///  H5链接
+
+
+//默认为YES
+@property (nonatomic, assign) BOOL shouldAutoLoad;
+
+/// 是否取消导航栏的title等于webView的title。默认是不取消，default is NO
+@property (nonatomic, readwrite, assign) BOOL shouldDisableWebViewTitle;
+
+-(NSArray *)jsFuncList;
+
 @end

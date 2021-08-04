@@ -14,4 +14,11 @@
 
 + (instancetype)modelFromDictionary:(NSDictionary *)dictionary;
 
+- (NSMutableDictionary *)jy_keyValues;
+
+//解档
++ (instancetype)modelFromCoder;
+//归档
++ (void)encodeModel:(NSDictionary *)dictionary;
+
 @end
