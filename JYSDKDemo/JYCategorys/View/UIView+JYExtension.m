@@ -63,4 +63,47 @@
     [self.layer setMasksToBounds:masksToBounds];
 }
 
+-(void)jy_corner:(UIRectCorner)corners radius:(CGFloat)radius
+{
+    @weakify(self)
+    //延迟0秒，让其操作进入下一个runloop（目的是获取真正的frame）
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        @strongify(self)
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(radius, radius)];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = self.bounds;
+        maskLayer.path = maskPath.CGPath;
+        self.layer.mask = maskLayer;
+    });
+}
+
+-(void)jy_setGradientWithColors:(NSArray *)colors
+                   locations:(NSArray<NSNumber *> *) locations
+                    endPoint:(CGPoint)endPoint
+{
+    @weakify(self)
+    //延迟0秒，让其操作进入下一个runloop（目的是获取真正的frame）
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        @strongify(self)
+        CAGradientLayer *gradient = [CAGradientLayer layer];
+        gradient.frame = self.bounds;
+        NSMutableArray *gradientColors = [NSMutableArray array];
+        for (UIColor *colorItem in colors) {
+            [gradientColors addObject:(id)colorItem.CGColor];
+        }
+        gradient.colors = gradientColors;
+        if (locations) {
+            gradient.locations = locations;
+        }
+        gradient.startPoint = CGPointMake(0.0, 0.0);
+        gradient.endPoint = endPoint;
+        [self.layer insertSublayer:gradient atIndex:0];
+    });
+}
+
+-(void)jy_setGradientWithColors:(NSArray *)colors locations:(NSArray<NSNumber *> *) locations
+{
+    [self jy_setGradientWithColors:colors locations:locations endPoint:CGPointMake(1.0, 0.0)];
+}
+
 @end

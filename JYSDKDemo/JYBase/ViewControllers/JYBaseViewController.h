@@ -49,4 +49,22 @@
 /// sub class can override ， 但不需要在ViewDidLoad中手动调用 ，依赖`shouldRequestRemoteDataOnViewDidLoad = YES` 且不用调用 super， 直接重写覆盖
 - (void)requestRemoteData;
 
+#pragma mark- 提示信息弹窗
+///** 显示成功HUD */
+//- (void)showSuccessMessage:(NSString *)message
+//                completion:(void (^)(void))completion;
+//
+///** 显示失败HUD */
+//- (void)showFailedMessage:(NSString *)message
+//               completion:(void (^)(void))completion;
+
+/** view中部显示toast */
+- (void)showCenterToastWithMessage:(NSString *)message
+                        completion:(void(^)(void))completion;
+
+/** view底部显示toast */
+- (void)showBottomToastWithMessage:(NSString *)message
+                        completion:(void(^)(void))completion;
+
+
 @end
