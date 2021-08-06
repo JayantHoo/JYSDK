@@ -6,7 +6,7 @@
 //  Copyright © 2019 jayant hoo. All rights reserved.
 //
 
-#import "UIViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
