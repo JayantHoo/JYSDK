@@ -14,12 +14,87 @@ static NSString *action_key = @"buttonActionBlockKey";
 @implementation UIButton (JYOptions)
 
 
-+ (instancetype) buttonWithTitle:(NSString *_Nullable) title
-                      titleColor:(UIColor *_Nullable)  titleColor
-                     selectTitle:(NSString *_Nullable) selectTitle
-                selectTitleColor:(UIColor *_Nullable)  selectTitleColor
-                 normalImageName:(NSString *_Nullable) imageName
-                 selectImageName:(NSString *_Nullable) selectImageName {
++ (instancetype)buttonWithTitle:(NSString *_Nullable) title
+                     titleColor:(UIColor *_Nullable)  titleColor
+                   disableTitle:(NSString *_Nullable) disableTitle
+              disableTitleColor:(UIColor *_Nullable)  disableTitleColor {
+    
+    return [UIButton buttonWithTitle:title
+                          titleColor:titleColor
+                        disableTitle:disableTitle
+                   disableTitleColor:disableTitleColor
+                     backgroundImage:nil
+              disableBackgroundImage:nil];
+}
+
++ (instancetype)buttonWithTitle:(NSString *_Nullable) title
+                     titleColor:(UIColor *_Nullable)  titleColor
+                   disableTitle:(NSString *_Nullable) disableTitle
+              disableTitleColor:(UIColor *_Nullable)  disableTitleColor
+                backgroundImage:(UIImage *_Nullable) backgroundImage
+         disableBackgroundImage:(UIImage *_Nullable) disableBackgroundImage {
+    
+    return [UIButton buttonWithTitle:title
+                          titleColor:titleColor
+                          stateTitle:disableTitle
+                     stateTitleColor:disableTitleColor
+                   titleControlState:UIControlStateDisabled
+                         normalImage:nil
+                          stateImage:nil
+                   imageControlState:0
+                     backgroundImage:backgroundImage
+                stateBackgroundImage:disableBackgroundImage
+              backgroundControlState:UIControlStateDisabled];
+    
+}
+
++(instancetype)buttonWithTitle:(NSString *_Nullable) title
+                    titleColor:(UIColor *_Nullable)  titleColor
+                   selectTitle:(NSString *_Nullable) selectTitle
+              selectTitleColor:(UIColor *_Nullable)  selectTitleColor {
+    
+    return [UIButton buttonWithTitle:title
+                          titleColor:titleColor
+                         selectTitle:selectTitle
+                    selectTitleColor:selectTitleColor
+                     normalImageName:nil
+                     selectImageName:nil];
+    
+}
+
++ (instancetype)buttonWithTitle:(NSString *_Nullable) title
+                     titleColor:(UIColor *_Nullable)  titleColor
+                    selectTitle:(NSString *_Nullable) selectTitle
+               selectTitleColor:(UIColor *_Nullable)  selectTitleColor
+                normalImageName:(UIImage *_Nullable) image
+                selectImageName:(UIImage *_Nullable) selectImage {
+    
+    return [UIButton buttonWithTitle:title
+                          titleColor:titleColor
+                          stateTitle:selectTitle
+                     stateTitleColor:selectTitleColor
+                   titleControlState:UIControlStateSelected
+                         normalImage:image
+                          stateImage:selectImage
+                   imageControlState:UIControlStateSelected
+                     backgroundImage:nil
+                stateBackgroundImage:nil
+              backgroundControlState:0];
+    
+}
+
+
++ (instancetype)buttonWithTitle:(NSString *_Nullable) title
+                     titleColor:(UIColor *_Nullable)  titleColor
+                     stateTitle:(NSString *_Nullable) stateTitle
+                stateTitleColor:(UIColor *_Nullable)  stateTitleColor
+              titleControlState:(UIControlState)      titleControlState
+                    normalImage:(UIImage *_Nullable)  image
+                     stateImage:(UIImage *_Nullable)  stateImage
+              imageControlState:(UIControlState)      imageControlState
+                backgroundImage:(UIImage *_Nullable)  backgroundImage
+           stateBackgroundImage:(UIImage *_Nullable)  stateBackgroundImage
+         backgroundControlState:(UIControlState)      backgroundControlState {
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     if (title) {
@@ -28,26 +103,27 @@ static NSString *action_key = @"buttonActionBlockKey";
     if (titleColor) {
         [button setTitleColor:titleColor forState:UIControlStateNormal];
     }
-    if (selectTitle) {
-        [button setTitle:selectTitle forState:UIControlStateSelected];
+    if (stateTitle) {
+        [button setTitle:stateTitle forState:titleControlState];
     }
-    if (selectTitleColor) {
-        [button setTitleColor:selectTitleColor forState:UIControlStateSelected];
+    if (stateTitleColor) {
+        [button setTitleColor:stateTitleColor forState:titleControlState];
     }
-    if (imageName) {
-        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    if (image) {
+        [button setImage:image forState:UIControlStateNormal];
     }
-    if (selectImageName) {
-        [button setImage:[UIImage imageNamed:selectImageName] forState:UIControlStateSelected];
+    if (stateImage) {
+        [button setImage:stateImage forState:imageControlState];
     }
-    
-    
-    
+    if (backgroundImage) {
+        [button setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+    }
+    if (stateBackgroundImage) {
+        [button setBackgroundImage:stateBackgroundImage forState:backgroundControlState];
+    }
     return button;
     
 }
-
-
 
 
 

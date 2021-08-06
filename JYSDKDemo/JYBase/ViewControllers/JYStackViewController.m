@@ -72,8 +72,8 @@
     
     if (!_stackView) {
         _stackView = [[UIStackView alloc] init];
-        _stackView.axis = MASAxisTypeVertical;
-        _stackView.distribution =   UIStackViewDistributionEqualSpacing;
+        _stackView.axis = UILayoutConstraintAxisVertical;
+        _stackView.distribution = UIStackViewDistributionEqualSpacing;
     }
     return _stackView;
 }

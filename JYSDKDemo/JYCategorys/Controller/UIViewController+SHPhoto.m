@@ -10,7 +10,7 @@
 #import "objc/runtime.h"
 #import <Photos/Photos.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-#import "CPAlertSheet.h"
+#import "JYAlertSheet.h"
 
 static  BOOL canEdit = NO;
 static  char blockKey;
@@ -39,7 +39,7 @@ static  char blockKey;
     
     self.photoBlock = [block copy];
     //自定义sheet
-    [CPAlertSheet showSheetWithActionTitles:@[@"拍照",@"我的相册"] atView:self.view handler:^(NSInteger index) {
+    [JYAlertSheet showSheetWithActionTitles:@[@"拍照",@"我的相册"] atView:self.view handler:^(int index) {
         if ([self isOpenedPhotosAuthority:index]) {
             [self presentToPhotoPicker:index];
         }
@@ -95,7 +95,7 @@ static  char blockKey;
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
-    [cancelAction setValue:CP40Color forKey:@"titleTextColor"];
+    [cancelAction setValue:JYColorFromHexString(@"#2C3546") forKey:@"titleTextColor"];
     [alertVc addAction:cancelAction];
     
     UIAlertAction *goAction = [UIAlertAction actionWithTitle:otherButtonTitles style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -108,7 +108,7 @@ static  char blockKey;
             }
         }
     }];
-    [goAction setValue:CP40Color forKey:@"titleTextColor"];
+    [goAction setValue:JYColorFromHexString(@"#2C3546") forKey:@"titleTextColor"];
     [alertVc addAction:goAction];
     
     [self presentViewController:alertVc animated:YES completion:nil];
@@ -247,7 +247,7 @@ static  char blockKey;
                 UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     
                 }];
-                [cancelAction setValue:CP40Color forKey:@"titleTextColor"];
+                [cancelAction setValue:JYColorFromHexString(@"#2C3546") forKey:@"titleTextColor"];
                 [alertVc addAction:cancelAction];
             
                 
@@ -266,7 +266,7 @@ static  char blockKey;
                 UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"確定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     
                 }];
-                [cancelAction setValue:CP40Color forKey:@"titleTextColor"];
+                [cancelAction setValue:JYColorFromHexString(@"#2C3546") forKey:@"titleTextColor"];
                 [alertVc addAction:cancelAction];
             
                 [self presentViewController:alertVc animated:YES completion:nil];

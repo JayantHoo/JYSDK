@@ -8,7 +8,7 @@
 
 #import "JYNetworkingManager.h"
 #import <AFNetworking.h>
-#import <Reachability.h>
+//#import <Reachability.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
@@ -88,7 +88,7 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
         
     }
     //设置header
-    [_manager.requestSerializer setValue:[CPUserManager share].token forHTTPHeaderField:@"Authorization"];
+//    [_manager.requestSerializer setValue:[CPUserManager share].token forHTTPHeaderField:@"Authorization"];
     [_manager.requestSerializer setValue:@"test" forHTTPHeaderField:@"versionValidate"];
     
     //设置cookies
@@ -108,15 +108,15 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
     
     self.manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     return [self.manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        CPLog(@"---token:%@\n---url:%@\n---params:%@\n---response:%@",[CPUserManager share].token,url,params,responseObject);
+//        JYLog(@"---token:%@\n---url:%@\n---params:%@\n---response:%@",[CPUserManager share].token,url,params,responseObject);
         
         JYHttpResponse *response = [JYHttpResponse response:responseObject];
         
         if (response.code == 401) {
-            [CPKEYWINDOW showErrorHUDWithStatus:@"登录失效，重新登录" dismissWithDelay:2 completion:^{
-                [[CPUserManager share] logout]; // 删除账号信息
-                [CPLoginTool login];            // 重新登录
-            }];
+//            [CPKEYWINDOW showErrorHUDWithStatus:@"登录失效，重新登录" dismissWithDelay:2 completion:^{
+//                [[CPUserManager share] logout]; // 删除账号信息
+//                [JYLoginTool login];            // 重新登录
+//            }];
             return ;
         }
         
@@ -147,15 +147,15 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
     }
     
     return [self.manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        CPLog(@"----token:%@\n---url:%@\n---params:%@\n---response:%@",[CPUserManager share].token, url,params,responseObject);
+//        JYLog(@"----token:%@\n---url:%@\n---params:%@\n---response:%@",[CPUserManager share].token, url,params,responseObject);
         
         JYHttpResponse *response = [JYHttpResponse response:responseObject];
         
         if (response.code == 401) {
-            [CPKEYWINDOW showErrorHUDWithStatus:@"登录失效，重新登录" dismissWithDelay:2 completion:^{
-                [[CPUserManager share] logout]; // 删除账号信息
-                [CPLoginTool login];            // 重新登录
-            }];
+//            [CPKEYWINDOW showErrorHUDWithStatus:@"登录失效，重新登录" dismissWithDelay:2 completion:^{
+//                [[CPUserManager share] logout]; // 删除账号信息
+//                [JYLoginTool login];            // 重新登录
+//            }];
             return ;
         }
         
@@ -277,7 +277,7 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
                                success:(void (^)(JYHttpResponse *))success
                                failure:(void (^)(NSDictionary *errorInfo))failure {
     return [self.manager PATCH:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        CPLog(@"---url:%@\n---params:%@\n---response:%@",url,params,responseObject);
+        JYLog(@"---url:%@\n---params:%@\n---response:%@",url,params,responseObject);
         
         JYHttpResponse *response = [JYHttpResponse response:responseObject];
         if (success) {
@@ -297,7 +297,7 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
                                 success:(void (^)(JYHttpResponse *))success
                                 failure:(void (^)(NSDictionary *errorInfo))failure {
     return [self.manager DELETE:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        CPLog(@"---url:%@\n---params:%@\n---response:%@",url,params,responseObject);
+        JYLog(@"---url:%@\n---params:%@\n---response:%@",url,params,responseObject);
         
         JYHttpResponse *response = [JYHttpResponse response:responseObject];
         if (success) {
@@ -360,7 +360,7 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
             block(formData);
         }
     } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        CPLog(@"---url:%@\n---params:%@\n---response:%@",url,params,responseObject);
+        JYLog(@"---url:%@\n---params:%@\n---response:%@",url,params,responseObject);
         
         JYHttpResponse *response = [JYHttpResponse response:responseObject];
         
@@ -382,7 +382,7 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
 /// 请求错误解析处理
 - (NSDictionary *)parsedErrorWithTask:(NSURLSessionDataTask *)task
                                 error:(NSError *)error{
-    CPLog(@"networkError:%@",error);
+    JYLog(@"networkError:%@",error);
     /// 不一定有值，则HttpCode = 0;
     NSHTTPURLResponse * httpResponse = (NSHTTPURLResponse *)task.response;
     NSInteger HTTPCode = httpResponse.statusCode;
@@ -408,10 +408,10 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
             break;
         case 401:  //账号下线
             
-            [CPKEYWINDOW showErrorHUDWithStatus:@"登录失效，重新登录" dismissWithDelay:1.5 completion:^{
-                [[CPUserManager share] logout]; // 删除账号信息
-                [CPLoginTool login];            // 重新登录
-            }];
+//            [CPKEYWINDOW showErrorHUDWithStatus:@"登录失效，重新登录" dismissWithDelay:1.5 completion:^{
+//                [[CPUserManager share] logout]; // 删除账号信息
+//                [JYLoginTool login];            // 重新登录
+//            }];
             
             break;
         case 403:
@@ -480,26 +480,26 @@ NSString * const JYHTTPServiceErrorNetworkKey = @"JYHTTPServiceErrorNetworkKey";
     return userInfo;
 }
 
--(BOOL)isViaWWAN {
-    
-    Reachability *reachability   = [Reachability reachabilityWithHostName:@"www.apple.com"];
-    NetworkStatus internetStatus = [reachability currentReachabilityStatus];
-    switch (internetStatus) {
-        case ReachableViaWiFi:
-            return NO;
-            break;
-            
-        case ReachableViaWWAN:
-            return YES;
-            break;
-            
-        case NotReachable:
-            return YES;
-            
-        default:
-            break;
-    }
-    return NO;
-}
+//-(BOOL)isViaWWAN {
+//
+//    Reachability *reachability   = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+//    NetworkStatus internetStatus = [reachability currentReachabilityStatus];
+//    switch (internetStatus) {
+//        case ReachableViaWiFi:
+//            return NO;
+//            break;
+//
+//        case ReachableViaWWAN:
+//            return YES;
+//            break;
+//
+//        case NotReachable:
+//            return YES;
+//
+//        default:
+//            break;
+//    }
+//    return NO;
+//}
 
 @end

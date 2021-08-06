@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+CPPush.h"
-
+#import "JYBaseViewController.h"
 
 @implementation UIViewController (CPPush)
 
@@ -53,7 +53,7 @@
     if (self.navigationController==nil) {//容错
         return;
     }
-    CPViewController *vc = nil;
+    JYBaseViewController *vc = nil;
     if (params != nil) {
         vc  = [[cls alloc] initWithParams:params];
     }else {
