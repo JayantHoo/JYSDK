@@ -37,6 +37,7 @@
 		2054C99526BD843900063150 /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C98626BD843900063150 /* NSBundle+BRPickerView.m */; };
 		2054C99626BD843900063150 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C98A26BD843900063150 /* BRAddressModel.m */; };
 		2054C99726BD843900063150 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C98D26BD843900063150 /* BRAddressPickerView.m */; };
+		2054C99B26BD86E600063150 /* CPCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C99A26BD86E600063150 /* CPCycleScrollView.m */; };
 		20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075334F258660C800A5E607 /* JYBaseAlertView.m */; };
 		20753356258661E800A5E607 /* JYAlertSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753355258661E800A5E607 /* JYAlertSheet.m */; };
 		2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075335B2586642200A5E607 /* JYTableViewCell.m */; };
@@ -199,6 +200,8 @@
 		2054C98B26BD843900063150 /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
 		2054C98C26BD843900063150 /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
 		2054C98D26BD843900063150 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
+		2054C99926BD86E600063150 /* CPCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCycleScrollView.h; sourceTree = "<group>"; };
+		2054C99A26BD86E600063150 /* CPCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCycleScrollView.m; sourceTree = "<group>"; };
 		2075334E258660C800A5E607 /* JYBaseAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseAlertView.h; sourceTree = "<group>"; };
 		2075334F258660C800A5E607 /* JYBaseAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseAlertView.m; sourceTree = "<group>"; };
 		20753354258661E800A5E607 /* JYAlertSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYAlertSheet.h; sourceTree = "<group>"; };
@@ -620,6 +623,8 @@
 				2054C95726BAF65500063150 /* HTTP */,
 				2079992F20E9FE7E00C34D9A /* JYControllerHelper.h */,
 				2079993020E9FE7E00C34D9A /* JYControllerHelper.m */,
+				2054C99926BD86E600063150 /* CPCycleScrollView.h */,
+				2054C99A26BD86E600063150 /* CPCycleScrollView.m */,
 				2079993B20EA103600C34D9A /* JYWebImageTool.h */,
 				2079993C20EA103600C34D9A /* JYWebImageTool.m */,
 				2079993220EA091600C34D9A /* JYLocalNotifationCenter.h */,
@@ -1113,6 +1118,7 @@
 				2054C96926BD826F00063150 /* CPRefreshAutoNormalFooter.m in Sources */,
 				2054C95D26BAF65500063150 /* JYHttpResponse.m in Sources */,
 				207533B3258F474700A5E607 /* JYBaseViewModel.m in Sources */,
+				2054C99B26BD86E600063150 /* CPCycleScrollView.m in Sources */,
 				2079993420EA091600C34D9A /* JYLocalNotifationCenter.m in Sources */,
 				207533BC258F484200A5E607 /* JYCollectionViewCell.m in Sources */,
 				9D64666820905324002128F1 /* NSString+JYSafe.m in Sources */,
