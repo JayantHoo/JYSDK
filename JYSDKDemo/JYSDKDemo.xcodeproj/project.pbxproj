@@ -21,6 +21,7 @@
 		2054C95626BAF37D00063150 /* UIViewController+CPPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95426BAF37D00063150 /* UIViewController+CPPush.m */; };
 		2054C95D26BAF65500063150 /* JYHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95926BAF65500063150 /* JYHttpResponse.m */; };
 		2054C95E26BAF65500063150 /* JYNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C95A26BAF65500063150 /* JYNetworkingManager.m */; };
+		2054C96226BC2B4800063150 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C96026BC2B4800063150 /* UIView+HUD.m */; };
 		20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075334F258660C800A5E607 /* JYBaseAlertView.m */; };
 		20753356258661E800A5E607 /* JYAlertSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753355258661E800A5E607 /* JYAlertSheet.m */; };
 		2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075335B2586642200A5E607 /* JYTableViewCell.m */; };
@@ -150,6 +151,8 @@
 		2054C95A26BAF65500063150 /* JYNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNetworkingManager.m; sourceTree = "<group>"; };
 		2054C95B26BAF65500063150 /* JYHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYHttpResponse.h; sourceTree = "<group>"; };
 		2054C95C26BAF65500063150 /* JYHTTPServiceConnstent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYHTTPServiceConnstent.h; sourceTree = "<group>"; };
+		2054C96026BC2B4800063150 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		2054C96126BC2B4800063150 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
 		2075334E258660C800A5E607 /* JYBaseAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseAlertView.h; sourceTree = "<group>"; };
 		2075334F258660C800A5E607 /* JYBaseAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseAlertView.m; sourceTree = "<group>"; };
 		20753354258661E800A5E607 /* JYAlertSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYAlertSheet.h; sourceTree = "<group>"; };
@@ -429,6 +432,8 @@
 		20753362258665F000A5E607 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2054C96126BC2B4800063150 /* UIView+HUD.h */,
+				2054C96026BC2B4800063150 /* UIView+HUD.m */,
 				20D99DEB20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.h */,
 				20D99DEC20E4DBA900F06BFE /* UIBarButtonItem+JYExtension.m */,
 				2079992520E9CE5700C34D9A /* UITabBar+JYBage.h */,
@@ -958,6 +963,7 @@
 				9D64666520905143002128F1 /* NSArray+JYSafe.m in Sources */,
 				207533A6258F3D9100A5E607 /* JYTestViewController.m in Sources */,
 				2054C95E26BAF65500063150 /* JYNetworkingManager.m in Sources */,
+				2054C96226BC2B4800063150 /* UIView+HUD.m in Sources */,
 				207533772586674D00A5E607 /* UIView+JYBageView.m in Sources */,
 				9D64665F20905094002128F1 /* NSDictionary+JYSafe.m in Sources */,
 				2079992A20E9DB3C00C34D9A /* UITableView+JYExtension.m in Sources */,

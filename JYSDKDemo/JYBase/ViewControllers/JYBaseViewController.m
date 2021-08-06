@@ -16,6 +16,8 @@
 
 @end
 
+#define HUD_DURATION_TIME 1.5
+
 @implementation JYBaseViewController
 
 - (instancetype)initWithParams:(NSDictionary *)params{
@@ -102,6 +104,58 @@
     /// ... subclass override
     
 }
+
+#pragma mark- 提示信息弹窗
+///** 显示成功HUD */
+//- (void)showSuccessMessage:(NSString *)message
+//                completion:(void (^)(void))completion {
+//    if (CPStringIsEmpty(message)) {
+//        return;
+//    }
+//
+//    [self showSuccessHUDWithStatus:message dismissWithDelay:HUD_DURATION_TIME completion:completion];
+//}
+//
+///** 显示失败HUD */
+//- (void)showFailedMessage:(NSString *)message
+//               completion:(void (^)(void))completion {
+//    if (JYStringIsEmpty(message)) {
+//        return;
+//    }
+//    [self showErrorHUDWithStatus:message dismissWithDelay:HUD_DURATION_TIME completion:completion];
+//}
+
+///** view中部显示toast */
+//- (void)showCenterToastWithMessage:(NSString *)message
+//                        completion:(void(^)(void))completion {
+//    if (JYStringIsEmpty(message)) {
+//        return;
+//    }
+//    
+//    [[UIApplication sharedApplication].delegate.window makeToast:message duration:HUD_DURATION_TIME position:[NSValue valueWithCGPoint:self.view.center]];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(HUD_DURATION_TIME * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        if (completion) {
+//            completion();
+//        }
+//    });
+//}
+//
+///** view底部显示toast */
+//- (void)showBottomToastWithMessage:(NSString *)message
+//                        completion:(void(^)(void))completion {
+//    if (JYStringIsEmpty(message)) {
+//        return;
+//    }
+//    CGPoint point = self.view.center;
+//    point.y = self.view.frame.size.height - 70;
+//    
+//    [[UIApplication sharedApplication].delegate.window makeToast:message duration:HUD_DURATION_TIME position:[NSValue valueWithCGPoint:point]];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(HUD_DURATION_TIME * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        if (completion) {
+//            completion();
+//        }
+//    });
+//}
 
 #pragma mark - Orientation
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {return UIInterfaceOrientationMaskPortrait;}

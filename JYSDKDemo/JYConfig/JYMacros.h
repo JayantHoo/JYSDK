@@ -33,6 +33,9 @@
 //----------------------------是否是iPhone X------------------------
 #define ISiPhoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(812.f, 375.f), [UIScreen mainScreen].bounds.size))
 
+//判断横竖屏(YES为竖，NO为横)
+#define ISPortrait ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown)
+
 //----------------------------尺寸比例定义------------------------
 #define JYAUTOSIZESCALEXFOR6S  (JYSCREENWIDTH/375.0)
 

@@ -33,4 +33,16 @@
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 @property (nonatomic) IBInspectable BOOL masksToBounds;
 
+//设置多个位置圆角
+-(void)jy_corner:(UIRectCorner)corners radius:(CGFloat)radius;
+
+//设置颜色渐变
+-(void)jy_setGradientWithColors:(NSArray *)colors
+                   locations:(NSArray<NSNumber *> *) locations
+                    endPoint:(CGPoint)endPoint;
+
+-(void)jy_setGradientWithColors:(NSArray *)colors
+                   locations:(NSArray<NSNumber *> *) locations;
+
+
 @end

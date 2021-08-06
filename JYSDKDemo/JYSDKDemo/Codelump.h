@@ -17,7 +17,6 @@
 
 
 
-
 //- (UILabel *) <#label#> {
 //    if (_<#label#>) {
 //        _<#label#> = [UILabel labelWithFont:<#font#> textColor:<#(UIColor *)#> textAlignment:<#(NSTextAlignment)#>];
@@ -38,8 +37,7 @@
 //}
 
 //cell init
-//-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-//{
+//- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 //    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 //        [self configUI];
 //        [self configConstraints];
@@ -47,26 +45,22 @@
 //    return self;
 //}
 //
-//-(void)setCellData:(id)cellData
-//{
+//- (void)setCellData:(id)cellData {
 //
 //}
 //
 //
 //#pragma mark- UI布局
-//-(void) configUI
-//{
+//- (void)configUI {
 //
 //}
 //
-//-(void)configConstraints
-//{
+//- (void)configConstraints {
 //
 //}
 
 
-//-(instancetype)initWithFrame:(CGRect)frame
-//{
+//- (instancetype)initWithFrame:(CGRect)frame {
 //    if (self = [super initWithFrame:frame]) {
 //        [self configUI];
 //        [self configConstraints];
@@ -74,32 +68,31 @@
 //    return self;
 //}
 //
-//-(void)configViewWithModel:(id)model
-//{
+//- (void)configViewWithModel:(id)model {
 //
 //}
 //
 //#pragma mark- UI布局
-//-(void)configUI
-//{
+//- (void)configUI {
 //
 //}
 //
-//-(void)configConstraints
-//{
+//- (void)configConstraints {
 //
 //}
 
 //@property (nonatomic,strong) <#id#> *<#name#>;/// <#注释#>
 
+
+
 //@property (nonatomic,weak) <#id#> *<#name#>;/// <#注释#>
-
+//
 //@property (nonatomic,copy) NSString *<#name#>;/// <#注释#>
-
+//
 //@property (nonatomic,assign) <#id#> <#name#>;/// <#注释#>
 
 
-//
+
 //#pragma mark - tableView
 //-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 //{
