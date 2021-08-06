@@ -19,6 +19,8 @@ target "JYSDKDemo" do
     pod 'SDCycleScrollView'                     #轮播图
     pod 'ZYCornerRadius'                        #imageView圆角处理
     pod 'DACircularProgress', '2.3.1'           #环形进度条
+    pod 'JXPagingView/Pager'
+    pod 'JXCategoryView'
     #pod 'ZFPlayer'                              #播放器
 #    pod 'FDFullscreenPopGesture'         , '1.1'#侧滑手势
     pod 'KVOController'          , '1.2.0'      #FaceBook KVO（优雅的代替系统原生的KVO）
