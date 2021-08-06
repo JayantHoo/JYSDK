@@ -38,6 +38,7 @@
 		2054C99626BD843900063150 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C98A26BD843900063150 /* BRAddressModel.m */; };
 		2054C99726BD843900063150 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C98D26BD843900063150 /* BRAddressPickerView.m */; };
 		2054C99B26BD86E600063150 /* CPCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C99A26BD86E600063150 /* CPCycleScrollView.m */; };
+		2054C99F26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2054C99E26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.m */; };
 		20753350258660C800A5E607 /* JYBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075334F258660C800A5E607 /* JYBaseAlertView.m */; };
 		20753356258661E800A5E607 /* JYAlertSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20753355258661E800A5E607 /* JYAlertSheet.m */; };
 		2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075335B2586642200A5E607 /* JYTableViewCell.m */; };
@@ -202,6 +203,8 @@
 		2054C98D26BD843900063150 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
 		2054C99926BD86E600063150 /* CPCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCycleScrollView.h; sourceTree = "<group>"; };
 		2054C99A26BD86E600063150 /* CPCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCycleScrollView.m; sourceTree = "<group>"; };
+		2054C99D26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YBAttributeTextTapAction.h"; sourceTree = "<group>"; };
+		2054C99E26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YBAttributeTextTapAction.m"; sourceTree = "<group>"; };
 		2075334E258660C800A5E607 /* JYBaseAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYBaseAlertView.h; sourceTree = "<group>"; };
 		2075334F258660C800A5E607 /* JYBaseAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYBaseAlertView.m; sourceTree = "<group>"; };
 		20753354258661E800A5E607 /* JYAlertSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYAlertSheet.h; sourceTree = "<group>"; };
@@ -521,6 +524,15 @@
 			path = AddressPickerView;
 			sourceTree = "<group>";
 		};
+		2054C99C26BD8A0D00063150 /* YBAttributeTextTapAction */ = {
+			isa = PBXGroup;
+			children = (
+				2054C99D26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.h */,
+				2054C99E26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.m */,
+			);
+			path = YBAttributeTextTapAction;
+			sourceTree = "<group>";
+		};
 		20753360258665DB00A5E607 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +631,7 @@
 		2079992E20E9FDF100C34D9A /* JYUtil */ = {
 			isa = PBXGroup;
 			children = (
+				2054C99C26BD8A0D00063150 /* YBAttributeTextTapAction */,
 				2054C96A26BD836500063150 /* TagListView */,
 				2054C95726BAF65500063150 /* HTTP */,
 				2079992F20E9FE7E00C34D9A /* JYControllerHelper.h */,
@@ -1156,6 +1169,7 @@
 				2054C99126BD843900063150 /* BRDatePickerView.m in Sources */,
 				2054C97026BD836500063150 /* TagListView.m in Sources */,
 				9DDD1DD9206C9A7200D35594 /* JYTPUserInfo.m in Sources */,
+				2054C99F26BD8A0D00063150 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				2054C94B26BAF0F600063150 /* UICollectionView+EmptyView.m in Sources */,
 				2075335C2586642200A5E607 /* JYTableViewCell.m in Sources */,
 				2075337D2586687D00A5E607 /* JYScanNative.m in Sources */,
